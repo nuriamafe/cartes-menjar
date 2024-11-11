@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cartes-menjar/static/css/main.27b03b2d.css",
-    "main.js": "/cartes-menjar/static/js/main.f4399b0d.js",
-    "static/js/458.35e8c8be.chunk.js": "/cartes-menjar/static/js/458.35e8c8be.chunk.js",
+    "main.css": "/cartes-menjar/static/css/main.7f5ede15.css",
+    "main.js": "/cartes-menjar/static/js/main.98f87da6.js",
+    "static/js/458.d68550d2.chunk.js": "/cartes-menjar/static/js/458.d68550d2.chunk.js",
     "static/js/453.2d3bfd44.chunk.js": "/cartes-menjar/static/js/453.2d3bfd44.chunk.js",
     "static/media/xino1.jpg": "/cartes-menjar/static/media/xino1.040341cb190512af8f88.jpg",
     "static/media/gluten.png": "/cartes-menjar/static/media/gluten.6713257ec19745457808.png",
@@ -20,13 +20,13 @@
     "static/media/fish.png": "/cartes-menjar/static/media/fish.cef95b422200b902386b.png",
     "static/media/dairy.png": "/cartes-menjar/static/media/dairy.fd941b063596b0705d7e.png",
     "index.html": "/cartes-menjar/index.html",
-    "main.27b03b2d.css.map": "/cartes-menjar/static/css/main.27b03b2d.css.map",
-    "main.f4399b0d.js.map": "/cartes-menjar/static/js/main.f4399b0d.js.map",
-    "458.35e8c8be.chunk.js.map": "/cartes-menjar/static/js/458.35e8c8be.chunk.js.map",
+    "main.7f5ede15.css.map": "/cartes-menjar/static/css/main.7f5ede15.css.map",
+    "main.98f87da6.js.map": "/cartes-menjar/static/js/main.98f87da6.js.map",
+    "458.d68550d2.chunk.js.map": "/cartes-menjar/static/js/458.d68550d2.chunk.js.map",
     "453.2d3bfd44.chunk.js.map": "/cartes-menjar/static/js/453.2d3bfd44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27b03b2d.css",
-    "static/js/main.f4399b0d.js"
+    "static/css/main.7f5ede15.css",
+    "static/js/main.98f87da6.js"
   ]
 }
