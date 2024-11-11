@@ -1,16 +1,32 @@
 {
   "files": {
-    "main.css": "/cartes-menjar/static/css/main.f855e6bc.css",
-    "main.js": "/cartes-menjar/static/js/main.a6f2af3e.js",
+    "main.css": "/cartes-menjar/static/css/main.27b03b2d.css",
+    "main.js": "/cartes-menjar/static/js/main.f4399b0d.js",
+    "static/js/458.35e8c8be.chunk.js": "/cartes-menjar/static/js/458.35e8c8be.chunk.js",
     "static/js/453.2d3bfd44.chunk.js": "/cartes-menjar/static/js/453.2d3bfd44.chunk.js",
-    "static/media/logo.svg": "/cartes-menjar/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/xino1.jpg": "/cartes-menjar/static/media/xino1.040341cb190512af8f88.jpg",
+    "static/media/gluten.png": "/cartes-menjar/static/media/gluten.6713257ec19745457808.png",
+    "static/media/peanuts.png": "/cartes-menjar/static/media/peanuts.6c69c0ec03da364a7fa1.png",
+    "static/media/peelfruits.png": "/cartes-menjar/static/media/peelfruits.05189b9719984529b271.png",
+    "static/media/crustaceans.png": "/cartes-menjar/static/media/crustaceans.d9a968b34d91d45ae0bd.png",
+    "static/media/soy.png": "/cartes-menjar/static/media/soy.bc128cc2105571192ad6.png",
+    "static/media/sesame.png": "/cartes-menjar/static/media/sesame.6f408a3cc5fff2c42cc3.png",
+    "static/media/lupins.png": "/cartes-menjar/static/media/lupins.9d60f508a986376cbcc4.png",
+    "static/media/sulfur.png": "/cartes-menjar/static/media/sulfur.89f12a0c81ec607648ff.png",
+    "static/media/mollusks.png": "/cartes-menjar/static/media/mollusks.d993caa0d86496c1e2ac.png",
+    "static/media/celery.png": "/cartes-menjar/static/media/celery.3ece1f9aa4d3f4919d71.png",
+    "static/media/egg.png": "/cartes-menjar/static/media/egg.08d1a38ae27bfa09dbc7.png",
+    "static/media/mustard.png": "/cartes-menjar/static/media/mustard.b889bdc837cc5ad37f47.png",
+    "static/media/fish.png": "/cartes-menjar/static/media/fish.cef95b422200b902386b.png",
+    "static/media/dairy.png": "/cartes-menjar/static/media/dairy.fd941b063596b0705d7e.png",
     "index.html": "/cartes-menjar/index.html",
-    "main.f855e6bc.css.map": "/cartes-menjar/static/css/main.f855e6bc.css.map",
-    "main.a6f2af3e.js.map": "/cartes-menjar/static/js/main.a6f2af3e.js.map",
+    "main.27b03b2d.css.map": "/cartes-menjar/static/css/main.27b03b2d.css.map",
+    "main.f4399b0d.js.map": "/cartes-menjar/static/js/main.f4399b0d.js.map",
+    "458.35e8c8be.chunk.js.map": "/cartes-menjar/static/js/458.35e8c8be.chunk.js.map",
     "453.2d3bfd44.chunk.js.map": "/cartes-menjar/static/js/453.2d3bfd44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.a6f2af3e.js"
+    "static/css/main.27b03b2d.css",
+    "static/js/main.f4399b0d.js"
   ]
 }
