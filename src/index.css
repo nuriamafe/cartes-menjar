@@ -115,6 +115,11 @@
 }
 
 /* ItemDetail */
+.ItemDetails h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
 .ItemDetails .ItemDescription,
 .ItemDetails .Extras {
   margin-top: 1em;

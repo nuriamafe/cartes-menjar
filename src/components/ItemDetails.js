@@ -43,22 +43,18 @@ function ItemDetails() {
           </Title>
 
           {itemDetails.extras.length !== 0 && (
-            <Flex align="center" className="Extras">
+            <Flex align="center" className="Extras" gap="small">
               {itemDetails.extras &&
                 itemDetails.extras.map((extra) => {
                   return (
                     <>
                       {extra === "faThumbsUp" && (
-                        <FontAwesomeIcon
-                          className="ExtraIcon"
-                          icon={faThumbsUp}
-                        />
+                        <>
+                          <FontAwesomeIcon icon={faThumbsUp} />
+                        </>
                       )}
                       {extra === "faPepperHot" && (
-                        <FontAwesomeIcon
-                          className="ExtraIcon"
-                          icon={faPepperHot}
-                        />
+                        <FontAwesomeIcon icon={faPepperHot} />
                       )}
                     </>
                   );

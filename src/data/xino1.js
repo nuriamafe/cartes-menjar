@@ -31,7 +31,7 @@ export const xino1 = [
             description: "",
             price: "3,35€",
             extras: [],
-            allergens: ["crustaceans"],
+            allergens: [],
           },
           {
             id: 3,
