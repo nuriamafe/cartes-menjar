@@ -1,0 +1,1 @@
+(self.webpackChunkcartes_menjar=self.webpackChunkcartes_menjar||[]).push([[8],{8:()=>{}}]);
