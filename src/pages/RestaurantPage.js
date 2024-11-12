@@ -25,7 +25,13 @@ function RestaurantPage() {
   const handleChange = (value) => {
     const targetSection = document.getElementById(value);
     if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth" });
+      const offsetTop =
+        targetSection.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: offsetTop - 60,
+        behavior: "smooth",
+      });
     }
   };
   return (

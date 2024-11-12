@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Typography, Spin, Flex, Image } from "antd";
+import { Typography, Spin, Flex, Image, Space } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faPepperHot } from "@fortawesome/free-solid-svg-icons";
 const { Title, Text } = Typography;
@@ -33,11 +33,22 @@ function ItemDetails() {
     return <Spin />;
   }
 
+  const splitDescription =
+    itemDetails &&
+    itemDetails.description.split(",").map((word) => word.trim());
+
   return (
     <>
       {itemDetails && (
         <Flex vertical align="center" className="ItemDetails">
           <Title level={3}>{itemDetails.name}</Title>
+          {itemDetails.image !== "" && (
+            <Image
+              className="itemImage"
+              src={itemDetails.image}
+              alt={itemDetails.name}
+            />
+          )}
           <Title level={4} style={{ marginTop: ".5em" }}>
             {itemDetails.price}
           </Title>
@@ -63,7 +74,11 @@ function ItemDetails() {
           )}
 
           <Flex align="center" className="ItemDescription">
-            <Text>{itemDetails.description}</Text>
+            <Space direction="vertical">
+              {splitDescription.map((word, index) => (
+                <Text key={index}>{word}</Text>
+              ))}
+            </Space>
           </Flex>
 
           {itemDetails.allergens.length !== 0 && (
