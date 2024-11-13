@@ -2,6 +2,7 @@ export const xino1 = [
   {
     name: "Restaurante Chino",
     description: "Comida para llevar (Recoger en el local)",
+    information: "",
     phone: "96 173 09 24",
     address: "Plaza Mongrell, 7 y 9, Cullera",
     sections: [

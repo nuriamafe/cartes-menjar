@@ -1,7 +1,17 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MenuSection from "../components/MenuSection";
-import { Flex, Typography, Spin, FloatButton, Select } from "antd";
+import {
+  Flex,
+  Typography,
+  Spin,
+  FloatButton,
+  Select,
+  Popover,
+  Button,
+  Space,
+} from "antd";
+import { InfoCircleOutlined } from "@ant-design/icons";
 const { Title, Text } = Typography;
 
 function RestaurantPage() {
@@ -34,11 +44,32 @@ function RestaurantPage() {
       });
     }
   };
+
+  const splitDescription =
+    restaurantInfo &&
+    restaurantInfo[0].information.split(",").map((word) => word.trim());
+
+  const content = (
+    <Space direction="vertical">
+      {splitDescription.map((word, index) => (
+        <Text key={index}>{word}</Text>
+      ))}
+    </Space>
+  );
   return (
     <>
       {restaurantInfo[0] && (
         <Flex vertical align="center" className="RestaurantPage">
-          <Title level={2}>{restaurantInfo[0].name}</Title>
+          <Flex align="center">
+            <Title level={2}>{restaurantInfo[0].name}</Title>
+            {restaurantInfo[0].information && (
+              <Popover content={content} trigger="click" placement="bottom">
+                <Button shape="circle" className="Info">
+                  <InfoCircleOutlined />
+                </Button>
+              </Popover>
+            )}
+          </Flex>
 
           <Title level={4} style={{ marginTop: ".5em" }}>
             {restaurantInfo[0].description}

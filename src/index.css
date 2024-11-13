@@ -57,6 +57,12 @@
 }
 
 /* Restaurant page */
+.RestaurantPage .Info {
+  margin-left: 1em;
+  background: none;
+  border: none;
+}
+
 .RestaurantPage h2 {
   margin-top: 0.5em;
   margin-bottom: 0;
