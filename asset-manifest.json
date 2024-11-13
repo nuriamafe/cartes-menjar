@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/cartes-menjar/static/css/main.7f5ede15.css",
-    "main.js": "/cartes-menjar/static/js/main.6a575843.js",
-    "static/js/8.49385db5.chunk.js": "/cartes-menjar/static/js/8.49385db5.chunk.js",
-    "static/js/458.e9e8fe09.chunk.js": "/cartes-menjar/static/js/458.e9e8fe09.chunk.js",
+    "main.css": "/cartes-menjar/static/css/main.856afef0.css",
+    "main.js": "/cartes-menjar/static/js/main.c23a1c44.js",
+    "static/js/8.994e85ea.chunk.js": "/cartes-menjar/static/js/8.994e85ea.chunk.js",
+    "static/js/458.bb81d91b.chunk.js": "/cartes-menjar/static/js/458.bb81d91b.chunk.js",
     "static/js/453.2d3bfd44.chunk.js": "/cartes-menjar/static/js/453.2d3bfd44.chunk.js",
     "static/media/xino1.jpg": "/cartes-menjar/static/media/xino1.040341cb190512af8f88.jpg",
     "static/media/hamburguesa1.jpg": "/cartes-menjar/static/media/hamburguesa1.7f4e6e4fe82760eef785.jpg",
@@ -22,14 +22,14 @@
     "static/media/fish.png": "/cartes-menjar/static/media/fish.cef95b422200b902386b.png",
     "static/media/dairy.png": "/cartes-menjar/static/media/dairy.fd941b063596b0705d7e.png",
     "index.html": "/cartes-menjar/index.html",
-    "main.7f5ede15.css.map": "/cartes-menjar/static/css/main.7f5ede15.css.map",
-    "main.6a575843.js.map": "/cartes-menjar/static/js/main.6a575843.js.map",
-    "8.49385db5.chunk.js.map": "/cartes-menjar/static/js/8.49385db5.chunk.js.map",
-    "458.e9e8fe09.chunk.js.map": "/cartes-menjar/static/js/458.e9e8fe09.chunk.js.map",
+    "main.856afef0.css.map": "/cartes-menjar/static/css/main.856afef0.css.map",
+    "main.c23a1c44.js.map": "/cartes-menjar/static/js/main.c23a1c44.js.map",
+    "8.994e85ea.chunk.js.map": "/cartes-menjar/static/js/8.994e85ea.chunk.js.map",
+    "458.bb81d91b.chunk.js.map": "/cartes-menjar/static/js/458.bb81d91b.chunk.js.map",
     "453.2d3bfd44.chunk.js.map": "/cartes-menjar/static/js/453.2d3bfd44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f5ede15.css",
-    "static/js/main.6a575843.js"
+    "static/css/main.856afef0.css",
+    "static/js/main.c23a1c44.js"
   ]
 }

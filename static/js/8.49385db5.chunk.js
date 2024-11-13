@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcartes_menjar=self.webpackChunkcartes_menjar||[]).push([[8],{8:(e,a,s)=>{s.r(a),s.d(a,{hamburguesa1:()=>r});const r=[{name:"Hamburgueseria",description:"Las mejores hamburguesas, al mejor precio",phone:"668 51 85 23",address:"Carrer Mercat 9 Bajo - Sueca",sections:[{id:0,name:"Entrantes",items:[{id:0,name:"Chinken wings",description:"Alitas de pollo ba\xf1adas con nuestra salsa gochu ligeramente picante con semillas de s\xe9samo",image:"",price:"8\u20ac",extras:[],allergens:[]}]}]}]}}]);
-//# sourceMappingURL=8.49385db5.chunk.js.map
