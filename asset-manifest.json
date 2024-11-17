@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cartes-menjar/static/css/main.d2f1cece.css",
-    "main.js": "/cartes-menjar/static/js/main.b1db0821.js",
+    "main.js": "/cartes-menjar/static/js/main.37348680.js",
     "static/js/8.05b0390a.chunk.js": "/cartes-menjar/static/js/8.05b0390a.chunk.js",
     "static/js/458.4e187413.chunk.js": "/cartes-menjar/static/js/458.4e187413.chunk.js",
     "static/js/453.2d3bfd44.chunk.js": "/cartes-menjar/static/js/453.2d3bfd44.chunk.js",
@@ -23,13 +23,13 @@
     "static/media/dairy.png": "/cartes-menjar/static/media/dairy.fd941b063596b0705d7e.png",
     "index.html": "/cartes-menjar/index.html",
     "main.d2f1cece.css.map": "/cartes-menjar/static/css/main.d2f1cece.css.map",
-    "main.b1db0821.js.map": "/cartes-menjar/static/js/main.b1db0821.js.map",
+    "main.37348680.js.map": "/cartes-menjar/static/js/main.37348680.js.map",
     "8.05b0390a.chunk.js.map": "/cartes-menjar/static/js/8.05b0390a.chunk.js.map",
     "458.4e187413.chunk.js.map": "/cartes-menjar/static/js/458.4e187413.chunk.js.map",
     "453.2d3bfd44.chunk.js.map": "/cartes-menjar/static/js/453.2d3bfd44.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2f1cece.css",
-    "static/js/main.b1db0821.js"
+    "static/js/main.37348680.js"
   ]
 }
