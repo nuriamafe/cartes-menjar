@@ -15,7 +15,7 @@ function App() {
       </Header>
       <Content>
         <Routes>
-          <Route path="/cartes-menjar" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route
             path="/restaurants/:restaurantName"
             element={<RestaurantPage />}

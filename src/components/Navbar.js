@@ -17,7 +17,7 @@ function Navbar() {
         >
           <LeftOutlined />
         </Button>
-        <Link to="/cartes-menjar">
+        <Link to="/">
           <Button className="Home" type="link">
             <HomeOutlined />
           </Button>
