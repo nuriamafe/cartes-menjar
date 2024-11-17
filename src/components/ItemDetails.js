@@ -87,7 +87,6 @@ function ItemDetails() {
                 itemDetails.allergens.map((allergen) => {
                   return (
                     <Image
-                      preview={false}
                       alt={allergen}
                       src={require(`../assets/allergens/${allergen}.png`)}
                     />

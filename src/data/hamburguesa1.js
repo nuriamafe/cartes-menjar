@@ -3,7 +3,7 @@ export const hamburguesa1 = [
     name: "Hamburgueseria",
     description: "Las mejores hamburguesas, al mejor precio",
     information:
-      "Completa tu menú por solo +3 y añade patatas fritas + 1 bebida 1/2 litro, Las hamburguesas son de 180gr de vaca madurada y están hechas a la brasa en Kamado, Nuestro pan es exclusivo y elaborado por nosotros con una receta única, Burguer Vegana (Beyond Burguer) +2€, Pan sin GLuten Brioche +1€",
+      "Completa tu menú por solo +3 y añade patatas fritas + 1 bebida 1/2 litro, Las hamburguesas son de 180gr de vaca madurada y están hechas a la brasa en Kamado, Nuestro pan es exclusivo y elaborado por nosotros con una receta única, Burguer Vegana (Beyond Burguer) +2€, Pan sin Gluten Brioche +1€",
     phone: "668 51 85 23",
     address: "Carrer Mercat 9 Bajo - Sueca",
     sections: [
@@ -19,7 +19,7 @@ export const hamburguesa1 = [
             image: "",
             price: "8€",
             extras: [],
-            allergens: [],
+            allergens: ["sesame"],
           },
           {
             id: 1,
@@ -28,17 +28,17 @@ export const hamburguesa1 = [
             image: "",
             price: "8€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten"],
           },
           {
             id: 2,
             name: "Pulled pork fries",
             description:
-              "Patatas fritas con salsa cheddar, Pulled pork a la BBQ Ahumado, BBQ bourbon y cebolla morada",
+              "Patatas fritas con salsa cheddar, Pulled pork a la BBQ Ahumado, BBQ bourbon, Cebolla morada",
             image: "",
             price: "8€",
             extras: [],
-            allergens: [],
+            allergens: ["dairy"],
           },
           {
             id: 3,
@@ -48,7 +48,7 @@ export const hamburguesa1 = [
             image: "",
             price: "9€",
             extras: [],
-            allergens: [],
+            allergens: ["dairy"],
           },
         ],
       },
@@ -64,7 +64,7 @@ export const hamburguesa1 = [
             image: "",
             price: "9,5€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 1,
@@ -74,7 +74,7 @@ export const hamburguesa1 = [
             image: "",
             price: "9,5€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 2,
@@ -84,7 +84,7 @@ export const hamburguesa1 = [
             image: "",
             price: "9,5€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 3,
@@ -94,7 +94,7 @@ export const hamburguesa1 = [
             image: "",
             price: "11,5€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 4,
@@ -104,7 +104,7 @@ export const hamburguesa1 = [
             image: "",
             price: "11,5€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 5,
@@ -114,7 +114,7 @@ export const hamburguesa1 = [
             image: "",
             price: "11,5€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 6,
@@ -124,7 +124,7 @@ export const hamburguesa1 = [
             image: "",
             price: "12€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 7,
@@ -134,7 +134,7 @@ export const hamburguesa1 = [
             image: "",
             price: "10€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
         ],
       },
@@ -149,7 +149,7 @@ export const hamburguesa1 = [
             image: "",
             price: "4€",
             extras: [],
-            allergens: [],
+            allergens: ["dairy"],
           },
           {
             id: 1,
@@ -158,7 +158,7 @@ export const hamburguesa1 = [
             image: "",
             price: "4,5€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 2,
@@ -167,7 +167,7 @@ export const hamburguesa1 = [
             image: "",
             price: "4,5€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten", "dairy"],
           },
           {
             id: 3,

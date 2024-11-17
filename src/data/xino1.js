@@ -2,7 +2,7 @@ export const xino1 = [
   {
     name: "Restaurante Chino",
     description: "Comida para llevar (Recoger en el local)",
-    information: "",
+    information: "👍Recomendado, 🌶️ Picante",
     phone: "96 173 09 24",
     address: "Plaza Mongrell, 7 y 9, Cullera",
     sections: [
@@ -35,7 +35,7 @@ export const xino1 = [
             image: "",
             price: "3,35€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 3,
@@ -86,7 +86,7 @@ export const xino1 = [
             image: "",
             price: "4,85€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 2,
@@ -95,7 +95,7 @@ export const xino1 = [
             image: "",
             price: "1,95€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten"],
           },
           {
             id: 3,
@@ -104,7 +104,7 @@ export const xino1 = [
             image: "",
             price: "1,85€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten"],
           },
           {
             id: 4,
@@ -122,7 +122,7 @@ export const xino1 = [
             image: "",
             price: "2,40€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans", "gluten"],
           },
           {
             id: 6,
@@ -131,7 +131,7 @@ export const xino1 = [
             image: "",
             price: "1,95€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten"],
           },
         ],
       },
@@ -146,7 +146,7 @@ export const xino1 = [
             image: "",
             price: "2,25€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten"],
           },
           {
             id: 1,
@@ -164,7 +164,7 @@ export const xino1 = [
             image: "",
             price: "5,05€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 3,
@@ -191,7 +191,7 @@ export const xino1 = [
             image: "",
             price: "4,45€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten"],
           },
           {
             id: 6,
@@ -200,7 +200,7 @@ export const xino1 = [
             image: "",
             price: "5,25€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans", "gluten"],
           },
           {
             id: 7,
@@ -209,7 +209,7 @@ export const xino1 = [
             image: "",
             price: "5,25€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten"],
           },
           {
             id: 8,
@@ -227,7 +227,7 @@ export const xino1 = [
             image: "",
             price: "5,75€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 10,
@@ -269,11 +269,11 @@ export const xino1 = [
             image: "",
             price: "8,05€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 3,
-            name: "Ternera con stas chinas y bambú",
+            name: "Ternera con setas chinas y bambú",
             description: "",
             image: "",
             price: "6,65€",
@@ -287,7 +287,7 @@ export const xino1 = [
             image: "",
             price: "6,65€",
             extras: ["faThumbsUp"],
-            allergens: [],
+            allergens: ["mollusks"],
           },
           {
             id: 5,
@@ -389,7 +389,7 @@ export const xino1 = [
             image: "",
             price: "6,25€",
             extras: ["faThumbsUp"],
-            allergens: [],
+            allergens: ["peelfruits"],
           },
           {
             id: 4,
@@ -480,7 +480,7 @@ export const xino1 = [
           },
           {
             id: 1,
-            name: "Pato al horo",
+            name: "Pato al horno",
             description: "",
             image: "",
             price: "9,35€",
@@ -545,7 +545,7 @@ export const xino1 = [
             image: "",
             price: "8,05€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 5,
@@ -572,7 +572,7 @@ export const xino1 = [
             image: "",
             price: "8,05€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 8,
@@ -632,7 +632,7 @@ export const xino1 = [
             image: "",
             price: "9,35€",
             extras: ["faThumbsUp", "faPepperHot"],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 2,
@@ -641,7 +641,7 @@ export const xino1 = [
             image: "",
             price: "9,65€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 3,
@@ -686,7 +686,7 @@ export const xino1 = [
             image: "",
             price: "9,05€",
             extras: ["faThumbsUp"],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 8,
@@ -722,7 +722,7 @@ export const xino1 = [
             image: "",
             price: "9,55€",
             extras: [],
-            allergens: [],
+            allergens: ["crustaceans"],
           },
           {
             id: 12,
@@ -767,7 +767,7 @@ export const xino1 = [
             image: "",
             price: "6,55€",
             extras: ["faThumbsUp"],
-            allergens: [],
+            allergens: ["peelfruit"],
           },
           {
             id: 17,
@@ -785,7 +785,7 @@ export const xino1 = [
             image: "",
             price: "5,05€",
             extras: [],
-            allergens: [],
+            allergens: ["gluten"],
           },
         ],
       },
