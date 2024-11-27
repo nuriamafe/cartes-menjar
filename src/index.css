@@ -135,15 +135,22 @@
 
 .ItemDetails .ItemDescription,
 .ItemDetails .Extras {
-  margin-top: 1em;
+  margin: 1em 0 1em 0;
 }
 
 .ItemDetails .Allergens img {
-  margin-top: 1em;
   width: 4em;
 }
 
 .ant-image-preview-operations-operation {
+  display: none;
+}
+
+.ant-image-mask:hover {
+  background-color: none;
+}
+
+.ant-image-mask-info {
   display: none;
 }
 

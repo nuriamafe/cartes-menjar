@@ -18,7 +18,7 @@ export const xino2 = [
             image: "",
             price: "3,50€",
             extras: [],
-            allergens: [],
+            allergens: ["egg"],
           },
           {
             id: 1,
