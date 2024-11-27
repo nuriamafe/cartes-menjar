@@ -93,7 +93,7 @@ function RestaurantPage() {
               })}
             />
           </div>
-          <Flex className="CardContainer" gap={50}>
+          <Flex className="SectionContainer" gap={50}>
             {restaurantInfo[0].sections &&
               restaurantInfo[0].sections.map((section) => (
                 <MenuSection

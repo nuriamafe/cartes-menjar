@@ -82,7 +82,7 @@ function ItemDetails() {
           </Flex>
 
           {itemDetails.allergens.length !== 0 && (
-            <Flex align="center" className="Allergens">
+            <Flex align="center" className="Allergens" gap="small">
               {itemDetails.allergens &&
                 itemDetails.allergens.map((allergen) => {
                   return (

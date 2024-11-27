@@ -1,6 +1,6 @@
 export const xino1 = [
   {
-    name: "Restaurante Chino",
+    name: "Restaurant Xino",
     description: "Comida para llevar (Recoger en el local)",
     information: "👍Recomendado, 🌶️ Picante",
     phone: "96 173 09 24",
@@ -95,7 +95,7 @@ export const xino1 = [
             image: "",
             price: "1,95€",
             extras: [],
-            allergens: ["gluten"],
+            allergens: [],
           },
           {
             id: 3,
@@ -104,7 +104,7 @@ export const xino1 = [
             image: "",
             price: "1,85€",
             extras: [],
-            allergens: ["gluten"],
+            allergens: [],
           },
           {
             id: 4,
@@ -122,7 +122,7 @@ export const xino1 = [
             image: "",
             price: "2,40€",
             extras: [],
-            allergens: ["crustaceans", "gluten"],
+            allergens: ["crustaceans"],
           },
           {
             id: 6,
@@ -131,7 +131,7 @@ export const xino1 = [
             image: "",
             price: "1,95€",
             extras: [],
-            allergens: ["gluten"],
+            allergens: [],
           },
         ],
       },
@@ -146,7 +146,7 @@ export const xino1 = [
             image: "",
             price: "2,25€",
             extras: [],
-            allergens: ["gluten"],
+            allergens: [],
           },
           {
             id: 1,
@@ -191,7 +191,7 @@ export const xino1 = [
             image: "",
             price: "4,45€",
             extras: [],
-            allergens: ["gluten"],
+            allergens: [],
           },
           {
             id: 6,
@@ -200,7 +200,7 @@ export const xino1 = [
             image: "",
             price: "5,25€",
             extras: [],
-            allergens: ["crustaceans", "gluten"],
+            allergens: ["crustaceans"],
           },
           {
             id: 7,
@@ -209,7 +209,7 @@ export const xino1 = [
             image: "",
             price: "5,25€",
             extras: [],
-            allergens: ["gluten"],
+            allergens: [],
           },
           {
             id: 8,
@@ -785,7 +785,7 @@ export const xino1 = [
             image: "",
             price: "5,05€",
             extras: [],
-            allergens: ["gluten"],
+            allergens: [],
           },
         ],
       },

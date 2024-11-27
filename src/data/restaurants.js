@@ -13,4 +13,11 @@ export const restaurantsInfo = [
     description: "Las mejores hamburguesas, al mejor precio",
     image: require("../assets/restaurants/hamburguesa1.jpg"),
   },
+  {
+    id: 2,
+    jsonName: "xino2",
+    name: "Restaurant Xino 2",
+    description: "No repartimos a domiciio",
+    image: require("../assets/restaurants/xino1.jpg"),
+  },
 ];
