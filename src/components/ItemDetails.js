@@ -83,15 +83,17 @@ function ItemDetails() {
 
           {itemDetails.allergens.length !== 0 && (
             <Flex align="center" className="Allergens" gap="small">
-              {itemDetails.allergens &&
-                itemDetails.allergens.map((allergen) => {
-                  return (
-                    <Image
-                      alt={allergen}
-                      src={require(`../assets/allergens/${allergen}.png`)}
-                    />
-                  );
-                })}
+              <Image.PreviewGroup>
+                {itemDetails.allergens &&
+                  itemDetails.allergens.map((allergen) => {
+                    return (
+                      <Image
+                        alt={allergen}
+                        src={require(`../assets/allergens/${allergen}.png`)}
+                      />
+                    );
+                  })}
+              </Image.PreviewGroup>
             </Flex>
           )}
         </Flex>
