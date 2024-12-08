@@ -3,7 +3,7 @@ export const xino2 = [
     name: "Restaurant Xino",
     description: "No repartimos a domicilio",
     information:
-      "Horario, De 12h a 16h. De 20h a 24h, Abierto todos los días, LUNES CERRADO, Por descanso del personal siempre y cuando no sea festivo, TODOS LOS FESTIVOS ABIERTO",
+      "Horario: de 12h a 16h. De 20h a 24h, Abierto todos los días, LUNES CERRADO por descanso del personal siempre y cuando no sea festivo, TODOS LOS FESTIVOS ABIERTO",
     phone: "96 171 09 37",
     address: "Plaza Portal de Cullera, 6, Sueca (Valencia)",
     sections: [
@@ -286,7 +286,7 @@ export const xino2 = [
           },
           {
             id: 9,
-            name: "Arroz frito on ternera",
+            name: "Arroz frito con ternera",
             description: "",
             image: "",
             price: "4,90€",

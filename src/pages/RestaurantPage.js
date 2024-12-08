@@ -11,8 +11,12 @@ import {
   Button,
   Space,
 } from "antd";
-import { InfoCircleOutlined } from "@ant-design/icons";
-const { Title, Text } = Typography;
+import {
+  InfoCircleOutlined,
+  PhoneOutlined,
+  EnvironmentOutlined,
+} from "@ant-design/icons";
+const { Title, Text, Link } = Typography;
 
 function RestaurantPage() {
   const { restaurantName } = useParams();
@@ -61,23 +65,43 @@ function RestaurantPage() {
       {restaurantInfo[0] && (
         <Flex vertical align="center" className="RestaurantPage">
           <Flex align="center">
-            <Title level={2}>{restaurantInfo[0].name}</Title>
-            {restaurantInfo[0].information && (
-              <Popover content={content} trigger="click" placement="bottom">
-                <Button shape="circle" className="Info">
-                  <InfoCircleOutlined />
-                </Button>
-              </Popover>
-            )}
+            <Space direction="horiontal">
+              <Title level={2}>{restaurantInfo[0].name}</Title>
+              {restaurantInfo[0].information && (
+                <Popover content={content} trigger="click" placement="bottom">
+                  <Button shape="circle" className="Info">
+                    <InfoCircleOutlined />
+                  </Button>
+                </Popover>
+              )}
+            </Space>
           </Flex>
 
-          <Title level={4} style={{ marginTop: ".5em" }}>
-            {restaurantInfo[0].description}
-          </Title>
+          {restaurantInfo[0].description && (
+            <Title level={4} style={{ marginTop: ".5em" }}>
+              {restaurantInfo[0].description}
+            </Title>
+          )}
 
           <Flex className="Contact" gap="large">
-            <Text>{restaurantInfo[0].phone}</Text>
-            <Text>{restaurantInfo[0].address}</Text>
+            <Space direction="vertical">
+              <Space direction="horizontal">
+                <EnvironmentOutlined />
+                <Link
+                  href={`https://maps.google.com/?q=${restaurantInfo[0].address}`}
+                  target="_blank"
+                >
+                  {restaurantInfo[0].address}
+                </Link>
+              </Space>
+
+              <Space direction="horizontal">
+                <PhoneOutlined />
+                <Link href={`tel:${restaurantInfo[0].phone}`} target="_blank">
+                  {restaurantInfo[0].phone}
+                </Link>
+              </Space>
+            </Space>
           </Flex>
 
           <div className="SelectContainer">

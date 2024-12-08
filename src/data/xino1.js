@@ -4,7 +4,7 @@ export const xino1 = [
     description: "Comida para llevar (Recoger en el local)",
     information: "👍Recomendado, 🌶️ Picante",
     phone: "96 173 09 24",
-    address: "Plaza Mongrell, 7 y 9, Cullera",
+    address: "Plaza Doctor José Mongrell, 5, Cullera (Valencia)",
     sections: [
       {
         id: 0,
