@@ -1,0 +1,21 @@
+.CartContainer {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+  width: 100%;
+
+  .Cart {
+    justify-items: center;
+    width: 80%;
+
+    .ListItems {
+      width: 100%;
+      text-align: left;
+
+      .ModifyQuantity svg {
+        width: 0.8em;
+        color: #cacfd2;
+      }
+    }
+  }
+}

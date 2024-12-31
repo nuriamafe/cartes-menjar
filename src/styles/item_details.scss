@@ -1,0 +1,28 @@
+.ItemDetails {
+  h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+
+  .ItemDescription,
+  .Extras {
+    margin: 1em 0 1em 0;
+  }
+
+  .Allergens img {
+    width: 4em;
+  }
+}
+
+/* Allergens images */
+.ant-image-preview-operations-operation {
+  display: none;
+}
+
+.ant-image-mask:hover {
+  background-color: none;
+}
+
+.ant-image-mask-info {
+  display: none;
+}

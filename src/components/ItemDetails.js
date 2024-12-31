@@ -3,22 +3,17 @@ import { useEffect, useState } from "react";
 import { Typography, Spin, Flex, Image, Space } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faPepperHot } from "@fortawesome/free-solid-svg-icons";
+import { useRestaurant } from "../context/RestauranContext";
 const { Title, Text } = Typography;
 
 function ItemDetails() {
   const { restaurantName, sectionId, itemId } = useParams();
-  const [loading, setLoading] = useState(true);
-  const [restaurantInfo, setRestaurantInfo] = useState(null);
   const [itemDetails, setItemDetails] = useState(null);
+  const { restaurantInfo, loading, fetchRestaurantInfo } = useRestaurant();
 
   useEffect(() => {
-    const fetchRestaurantInfo = async () => {
-      const userModule = await import(`../data/${restaurantName}.js`);
-      setRestaurantInfo(userModule[`${restaurantName}`]);
-      setLoading(false);
-    };
-    fetchRestaurantInfo();
-  }, [restaurantName]);
+    fetchRestaurantInfo(restaurantName);
+  }, [restaurantName, fetchRestaurantInfo]);
 
   useEffect(() => {
     const fetchItem = async () => {

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 
 // Crear el contexto para el carrito
 const CartContext = createContext();
@@ -6,6 +6,19 @@ const CartContext = createContext();
 // Componente proveedor del contexto que envuelve a la aplicación
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+
+  // Cargar el carrito desde sessionStorage al iniciar
+  useEffect(() => {
+    const storedCart = sessionStorage.getItem("cart");
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    }
+  }, []);
+
+  // Guardar el carrito en sessionStorage cada vez que cambie
+  useEffect(() => {
+    sessionStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   // Función para agregar productos al carrito
   const addToCart = (product) => {

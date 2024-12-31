@@ -1,7 +1,7 @@
 import { List, Typography, message } from "antd";
 import { Link } from "react-router-dom";
 import { PlusOutlined } from "@ant-design/icons";
-import { useCart } from "../functions/CartContext";
+import { useCart } from "../context/CartContext";
 const { Title } = Typography;
 
 function MenuSection(props) {

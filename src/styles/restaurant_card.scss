@@ -1,0 +1,15 @@
+.RestaurantCard {
+  font-size: 20px;
+  width: 17em;
+  height: 11em;
+
+  .ant-card-body {
+    padding: 1em;
+  }
+
+  .ant-card-cover img {
+    font-size: 20px;
+    height: 8em;
+    object-fit: cover;
+  }
+}
