@@ -6,7 +6,7 @@ import RestaurantCard from "../components/RestaurantCard";
 function HomePage() {
   const [restaurants, setRestaurants] = useState(restaurantsInfo);
   const [restaurantsData] = useState(restaurantsInfo);
-  const [setSearch] = useState("");
+  const [search, setSearch] = useState("");
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
