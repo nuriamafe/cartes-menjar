@@ -11,6 +11,7 @@
 
 /* Navbar */
 .Navbar {
+  width: 100%;
   margin-top: 0.5em;
   position: relative;
 }
@@ -20,9 +21,16 @@
 }
 
 .Navbar .Back {
-  margin-top: 1em;
+  margin: 1em 0 0 1em;
   position: absolute;
   left: 0;
+  color: white;
+}
+
+.Navbar .MenuButton {
+  margin: 1em 1em 0 0;
+  position: absolute;
+  right: 0;
   color: white;
 }
 
@@ -130,6 +138,16 @@
   font-weight: normal;
 }
 
+.MenuSection .ListItems .ant-list-item .ant-list-item-meta-description {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.MenuSection .ModifyQuantity svg {
+  width: 0.8em;
+  color: #cacfd2;
+}
+
 /* ItemDetail */
 .ItemDetails h3 {
   margin-top: 0.5em;
@@ -155,6 +173,29 @@
 
 .ant-image-mask-info {
   display: none;
+}
+
+/* Cart */
+.CartContainer {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.Cart {
+  justify-items: center;
+  width: 80%;
+}
+
+.Cart .ListItems {
+  width: 100%;
+  text-align: left;
+}
+
+.Cart .ModifyQuantity svg {
+  width: 0.8em;
+  color: #cacfd2;
 }
 
 /* Small devices */
