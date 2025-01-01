@@ -18,6 +18,6 @@ export const restaurantsInfo = [
     jsonName: "xino2",
     name: "Restaurant Xino 2",
     description: "No repartimos a domiciio",
-    image: require("../assets/restaurants/xino1.jpg"),
+    image: require("../assets/restaurants/xino2.jpg"),
   },
 ];

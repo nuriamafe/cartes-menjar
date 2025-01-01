@@ -74,6 +74,10 @@ export const CartProvider = ({ children }) => {
     return total.toFixed(2).replace(".", ","); // Mostrar el total con coma como separador decimal
   };
 
+  const clearCart = () => {
+    setCart([]);
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -82,6 +86,7 @@ export const CartProvider = ({ children }) => {
         increaseQuantity,
         decreaseQuantity,
         getTotal,
+        clearCart,
       }}
     >
       {children}

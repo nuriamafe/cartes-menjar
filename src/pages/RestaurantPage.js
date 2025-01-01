@@ -116,14 +116,16 @@ function RestaurantPage() {
       {restaurantInfo && (
         <Flex vertical align="center" className="RestaurantPage">
           {/* Restaurant info */}
-          <Flex align="center">
+          <Flex justify="center" className="RestaurantInfo">
             <Space direction="horiontal">
               <Title level={2}>{name}</Title>
               {information && (
                 <Popover content={content} trigger="click" placement="bottom">
-                  <Button shape="circle" className="Info">
-                    <InfoCircleOutlined />
-                  </Button>
+                  <Button
+                    shape="circle"
+                    icon={<InfoCircleOutlined />}
+                    className="Info"
+                  />
                 </Popover>
               )}
             </Space>

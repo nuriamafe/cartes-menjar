@@ -1,7 +1,12 @@
 .RestaurantPage {
-  .Info {
-    background: none;
-    border: none;
+  .RestaurantInfo {
+    width: 100%;
+    position: relative;
+    .Info {
+      background: none;
+      border: none;
+      position: absolute;
+    }
   }
 
   h2 {

@@ -17,5 +17,15 @@
         color: #cacfd2;
       }
     }
+
+    .CartHeader {
+      width: 100%;
+      position: relative;
+
+      .ClearCart {
+        position: absolute;
+        right: 0;
+      }
+    }
   }
 }
