@@ -20,4 +20,11 @@ export const restaurantsInfo = [
     description: "No repartimos a domiciio",
     image: require("../assets/restaurants/xino2.jpg"),
   },
+  {
+    id: 3,
+    jsonName: "pizza1",
+    name: "Pizzeria",
+    description: "Pizzes i entrepans",
+    image: require("../assets/restaurants/pizza1.jpg"),
+  },
 ];

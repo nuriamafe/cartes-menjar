@@ -18,6 +18,7 @@ export const RestaurantProvider = ({ children }) => {
         restaurantInfo,
         loading,
         fetchRestaurantInfo,
+        setRestaurantInfo,
       }}
     >
       {children}

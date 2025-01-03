@@ -21,11 +21,13 @@ const { Title, Text, Link } = Typography;
 
 function RestaurantPage() {
   const { restaurantName } = useParams();
-  const { restaurantInfo, loading, fetchRestaurantInfo } = useRestaurant();
+  const { restaurantInfo, loading, fetchRestaurantInfo, setRestaurantInfo } =
+    useRestaurant();
 
   useEffect(() => {
+    setRestaurantInfo([]);
     fetchRestaurantInfo(restaurantName);
-  }, [restaurantName, fetchRestaurantInfo]);
+  }, [restaurantName, fetchRestaurantInfo, setRestaurantInfo]);
 
   if (loading) {
     return <Spin />;
