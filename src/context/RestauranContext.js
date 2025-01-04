@@ -3,7 +3,7 @@ import React, { createContext, useState, useContext } from "react";
 const RestaurantContext = createContext();
 
 export const RestaurantProvider = ({ children }) => {
-  const [restaurantInfo, setRestaurantInfo] = useState([]);
+  const [restaurantInfo, setRestaurantInfo] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const fetchRestaurantInfo = async (restaurantName) => {

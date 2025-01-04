@@ -25,11 +25,11 @@ function RestaurantPage() {
     useRestaurant();
 
   useEffect(() => {
-    setRestaurantInfo([]);
+    setRestaurantInfo(null);
     fetchRestaurantInfo(restaurantName);
   }, [restaurantName, fetchRestaurantInfo, setRestaurantInfo]);
 
-  if (loading) {
+  if (loading || !restaurantInfo) {
     return <Spin />;
   }
 
