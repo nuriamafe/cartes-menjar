@@ -1,6 +1,6 @@
 export const hamburguesa1 = [
   {
-    name: "Hamburgueseria",
+    name: "Ahupapi",
     description: "Las mejores hamburguesas, al mejor precio",
     information:
       "Completa tu menú por solo +3 y añade patatas fritas + 1 bebida 1/2 litro, Las hamburguesas son de 180gr de vaca madurada y están hechas a la brasa en Kamado, Nuestro pan es exclusivo y elaborado por nosotros con una receta única, Burguer Vegana (Beyond Burguer) +2€, Pan sin Gluten Brioche +1€",
@@ -13,7 +13,7 @@ export const hamburguesa1 = [
         items: [
           {
             id: 0,
-            name: "Chinken wings",
+            name: "Chicken wings",
             description:
               "Alitas de pollo bañadas con nuestra salsa gochu ligeramente picante con semillas de sésamo",
             image: "",

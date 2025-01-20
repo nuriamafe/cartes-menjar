@@ -1,6 +1,6 @@
 export const pizza1 = [
   {
-    name: "Pizzeria",
+    name: "Ahh! Dios pizza",
     description: "Pizzes i entrepans",
     information:
       "Per a emportar i a domicili, Horari: dijous a diumenge de 19h a 22:30h, Afegix ingredients al teu gusr per 0'60€ individual i 1'10€ familiar",

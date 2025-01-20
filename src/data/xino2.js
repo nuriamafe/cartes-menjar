@@ -1,6 +1,6 @@
 export const xino2 = [
   {
-    name: "Restaurant Xino",
+    name: "Chino Triste",
     description: "No repartimos a domicilio",
     information:
       "Horario: de 12h a 16h. De 20h a 24h, Abierto todos los días, LUNES CERRADO por descanso del personal siempre y cuando no sea festivo, TODOS LOS FESTIVOS ABIERTO",

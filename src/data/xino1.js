@@ -1,6 +1,6 @@
 export const xino1 = [
   {
-    name: "Restaurant Xino",
+    name: "Jon Lon",
     description: "Comida para llevar (Recoger en el local)",
     information: "👍Recomendado, 🌶️ Picante",
     phone: "96 173 09 24",
