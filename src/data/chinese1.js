@@ -1,4 +1,4 @@
-export const xino1 = [
+export const chinese1 = [
   {
     name: "Jon Lon",
     description: "Comida para llevar (Recoger en el local)",

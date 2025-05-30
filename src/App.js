@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import ItemDetails from "./components/ItemDetails";
 import Cart from "./components/Cart";
 import { CartProvider } from "./context/CartContext";
-import { RestaurantProvider } from "./context/RestauranContext";
+import { RestaurantProvider } from "./context/RestaurantContext";
 const { Content, Header } = Layout;
 
 function App() {

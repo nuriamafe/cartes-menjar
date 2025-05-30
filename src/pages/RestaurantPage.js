@@ -16,7 +16,7 @@ import {
   PhoneOutlined,
   EnvironmentOutlined,
 } from "@ant-design/icons";
-import { useRestaurant } from "../context/RestauranContext";
+import { useRestaurant } from "../context/RestaurantContext";
 const { Title, Text, Link } = Typography;
 
 function RestaurantPage() {

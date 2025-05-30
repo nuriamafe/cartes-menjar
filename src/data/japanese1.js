@@ -1,4 +1,4 @@
-export const sushi1 = [
+export const japanese1 = [
   {
     name: "Olevantari Sushi Bar",
     description: "Tradicional y moderno",

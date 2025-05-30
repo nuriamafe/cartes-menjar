@@ -1,4 +1,4 @@
-export const hamburguesa1 = [
+export const burger1 = [
   {
     name: "Ahupapi",
     description: "Las mejores hamburguesas, al mejor precio",

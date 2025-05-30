@@ -1,22 +1,22 @@
 export const restaurantsInfo = [
   {
     id: 0,
-    jsonName: "xino1",
+    jsonName: "chinese1",
     name: "Jon Lon",
     description: "Comida para llevar (Recoger en el local)",
-    image: require("../assets/restaurants/xino1.jpg"),
+    image: require("../assets/restaurants/chinese1.jpg"),
   },
   {
     id: 1,
-    jsonName: "hamburguesa1",
+    jsonName: "burger1",
     name: "Ahupapi",
-    image: require("../assets/restaurants/hamburguesa1.jpg"),
+    image: require("../assets/restaurants/burguer1.jpg"),
   },
   {
     id: 2,
-    jsonName: "xino2",
+    jsonName: "chinese2",
     name: "Chino Triste",
-    image: require("../assets/restaurants/xino2.jpg"),
+    image: require("../assets/restaurants/chinese2.jpg"),
   },
   {
     id: 3,
@@ -26,8 +26,8 @@ export const restaurantsInfo = [
   },
   {
     id: 4,
-    jsonName: "sushi1",
+    jsonName: "japanese1",
     name: "Olevantari Sushi Bar",
-    image: require("../assets/restaurants/sushi1.jpg"),
+    image: require("../assets/restaurants/japanese1.jpg"),
   },
 ];

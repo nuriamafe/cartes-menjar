@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Typography, Spin, Flex, Image, Space } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faPepperHot } from "@fortawesome/free-solid-svg-icons";
-import { useRestaurant } from "../context/RestauranContext";
+import { useRestaurant } from "../context/RestaurantContext";
 const { Title, Text } = Typography;
 
 function ItemDetails() {
