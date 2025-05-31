@@ -2,8 +2,9 @@ export const chinese2 = [
   {
     name: "Chino Triste",
     description: "No repartimos a domicilio",
-    information:
-      "Horario: de 12h a 16h. De 20h a 24h, Abierto todos los días, LUNES CERRADO por descanso del personal siempre y cuando no sea festivo, TODOS LOS FESTIVOS ABIERTO",
+    information: "",
+    restaurantHours:
+      "Horario: de 12h a 16h. De 20h a 24h; Abierto todos los días; LUNES CERRADO por descanso del personal siempre y cuando no sea festivo; TODOS LOS FESTIVOS ABIERTO",
     phone: "96 171 09 37",
     address: "Plaza Portal de Cullera, 6, Sueca (Valencia)",
     sections: [
@@ -658,7 +659,7 @@ export const chinese2 = [
           },
           {
             id: 2,
-            name: "Gambas, calamares y pescado frito",
+            name: "Gambas; calamares y pescado frito",
             description: "",
             image: "",
             price: "8,20€",
@@ -882,7 +883,7 @@ export const chinese2 = [
             id: 0,
             name: "2 Personas",
             description:
-              "2 Rollos primavera, 1 Ensalada china, 1 Arroz tres delicias, 1 Pollo con almendras, 1 Ternera con salsa de ostras",
+              "2 Rollos primavera; 1 Ensalada china; 1 Arroz tres delicias; 1 Pollo con almendras; 1 Ternera con salsa de ostras",
             image: "",
             price: "23,00€",
             extras: [],
@@ -892,7 +893,7 @@ export const chinese2 = [
             id: 1,
             name: "3 Personas",
             description:
-              "3 Rollos primavera, 1 Ensalada china, 1 Arroz frito tres delicias, 1 Tallarines con pollo, 1 Tallarines con almendras, 1 Ternera con bambú y setas chinas",
+              "3 Rollos primavera; 1 Ensalada china; 1 Arroz frito tres delicias; 1 Tallarines con pollo; 1 Tallarines con almendras; 1 Ternera con bambú y setas chinas",
             image: "",
             price: "32,00€",
             extras: [],
@@ -902,7 +903,7 @@ export const chinese2 = [
             id: 2,
             name: "4 Personas",
             description:
-              "4 Rollos primavera, 1 Ensalada china, 1 Arroz frito tres delicias, 1 Pollo con almendras, 1 Cerdo agridulce, 1 Ternera con bambú y setas chinas, 1 Bolas de pollo",
+              "4 Rollos primavera; 1 Ensalada china; 1 Arroz frito tres delicias; 1 Pollo con almendras; 1 Cerdo agridulce; 1 Ternera con bambú y setas chinas; 1 Bolas de pollo",
             image: "",
             price: "44,50€",
             extras: [],
@@ -912,7 +913,7 @@ export const chinese2 = [
             id: 3,
             name: "5 Personas",
             description:
-              "5 Rollos primavera, 2 Ensalda china, 2 Arroz frito tres delicias, 1 Pollo con almendras, 1 Bolas de pollo, 1 Pan de gambas, 1 Terner con salsa de ostras, 1 Familia feliz",
+              "5 Rollos primavera; 2 Ensalda china; 2 Arroz frito tres delicias; 1 Pollo con almendras; 1 Bolas de pollo; 1 Pan de gambas; 1 Terner con salsa de ostras; 1 Familia feliz",
             image: "",
             price: "53,00€",
             extras: [],
@@ -922,7 +923,7 @@ export const chinese2 = [
             id: 4,
             name: "6 Personas",
             description:
-              "6 Rollos primavera, 2 Ensalada china, 2 Arroz frito tres delicias, 2 Pollo con almendras, 1 Bolas de pollo, 1 Pan de gambas, 1 Gambas al Tie-pan, 1 Ternera de bambú y setas",
+              "6 Rollos primavera; 2 Ensalada china; 2 Arroz frito tres delicias; 2 Pollo con almendras; 1 Bolas de pollo; 1 Pan de gambas; 1 Gambas al Tie-pan; 1 Ternera de bambú y setas",
             image: "",
             price: "67,00€",
             extras: [],
@@ -932,7 +933,7 @@ export const chinese2 = [
             id: 5,
             name: "7 Personas",
             description:
-              "7 Rollos primavera, 2 Ensalada china, 3 Arroz frito tres delicias, 2 Ternera con salsa de ostras, 1 Gambas al Tie-pan, 1 Pollo con almendras, 1 Bolas de pollo, 2 Cerdo agridulce",
+              "7 Rollos primavera; 2 Ensalada china; 3 Arroz frito tres delicias; 2 Ternera con salsa de ostras; 1 Gambas al Tie-pan; 1 Pollo con almendras; 1 Bolas de pollo; 2 Cerdo agridulce",
             image: "",
             price: "76,50€",
             extras: [],
@@ -942,7 +943,7 @@ export const chinese2 = [
             id: 6,
             name: "8 Personas",
             description:
-              "8 Rollos primavera, 2 Ensalada china, 3 Arroz frito tres delicias, 2 Ternera con salsa de ostras, 1 Cerdo agridulce, 1 Marisco variado salteado, 2 Pollo con almendras, 2 Pan de gambas, 1 Pato al Tie-pan",
+              "8 Rollos primavera; 2 Ensalada china; 3 Arroz frito tres delicias; 2 Ternera con salsa de ostras; 1 Cerdo agridulce; 1 Marisco variado salteado; 2 Pollo con almendras; 2 Pan de gambas; 1 Pato al Tie-pan",
             image: "",
             price: "88,00€",
             extras: [],
@@ -952,7 +953,7 @@ export const chinese2 = [
             id: 7,
             name: "10 Personas",
             description:
-              "10 Rollos de primavera, 3 Ensalada china, 3 Arroz frito tres delicias, 2 Tallarines con ternera, 2 Wan tun frito, 2 Pollo con almendras, 2 Ternera con bambú y setas, 1 Gambas al Tie-pan, 2 Bolas de pollo",
+              "10 Rollos de primavera; 3 Ensalada china; 3 Arroz frito tres delicias; 2 Tallarines con ternera; 2 Wan tun frito; 2 Pollo con almendras; 2 Ternera con bambú y setas; 1 Gambas al Tie-pan; 2 Bolas de pollo",
             image: "",
             price: "107,50€",
             extras: [],

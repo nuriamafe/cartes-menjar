@@ -30,7 +30,7 @@ function ItemDetails() {
 
   const splitDescription =
     itemDetails &&
-    itemDetails.description.split(",").map((word) => word.trim());
+    itemDetails.description.split(";").map((word) => word.trim());
 
   return (
     <>

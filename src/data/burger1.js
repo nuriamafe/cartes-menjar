@@ -1,9 +1,11 @@
 export const burger1 = [
   {
     name: "Ahupapi",
-    description: "Las mejores hamburguesas, al mejor precio",
+    description: "Las mejores hamburguesas; al mejor precio",
     information:
-      "Completa tu menú por solo +3 y añade patatas fritas + 1 bebida 1/2 litro, Las hamburguesas son de 180gr de vaca madurada y están hechas a la brasa en Kamado, Nuestro pan es exclusivo y elaborado por nosotros con una receta única, Burguer Vegana (Beyond Burguer) +2€, Pan sin Gluten Brioche +1€",
+      "Completa tu menú por solo +3 y añade patatas fritas + 1 bebida 1/2 litro; Las hamburguesas son de 180gr de vaca madurada y están hechas a la brasa en Kamado; Nuestro pan es exclusivo y elaborado por nosotros con una receta única; Burguer Vegana (Beyond Burguer) +2€; Pan sin Gluten Brioche +1€",
+    restaurantHours:
+      "Horario otoño; Miércoles y jueves 20:30h; Viernes; sábado y domingo 19:30h a 23:00h",
     phone: "668 51 85 23",
     address: "Carrer Mercat 9 Bajo - Sueca",
     sections: [
@@ -34,7 +36,7 @@ export const burger1 = [
             id: 2,
             name: "Pulled pork fries",
             description:
-              "Patatas fritas con salsa cheddar, Pulled pork a la BBQ Ahumado, BBQ bourbon, Cebolla morada",
+              "Patatas fritas con salsa cheddar; Pulled pork a la BBQ Ahumado; BBQ bourbon; Cebolla morada",
             image: "",
             price: "8€",
             extras: [],
@@ -44,7 +46,7 @@ export const burger1 = [
             id: 3,
             name: "Top nachos",
             description:
-              "Totopos caseros, Salsa cheddar, Guacamole, Pico de gallo, Pulled pork, Sweet chilli",
+              "Totopos caseros; Salsa cheddar; Guacamole; Pico de gallo; Pulled pork; Sweet chilli",
             image: "",
             price: "9€",
             extras: [],
@@ -60,7 +62,7 @@ export const burger1 = [
             id: 0,
             name: "De la casa",
             description:
-              "Vaca madurada, Cheddar, Salsa smokey mayo, Cebolla relish",
+              "Vaca madurada; Cheddar; Salsa smokey mayo; Cebolla relish",
             image: "",
             price: "9,5€",
             extras: [],
@@ -70,7 +72,7 @@ export const burger1 = [
             id: 1,
             name: "Penny",
             description:
-              "Vaca madurada, Cheddar, Bacon, Salsa Camembert, Tomate caramelizado",
+              "Vaca madurada; Cheddar; Bacon; Salsa Camembert; Tomate caramelizado",
             image: "",
             price: "9,5€",
             extras: [],
@@ -80,7 +82,7 @@ export const burger1 = [
             id: 2,
             name: "Papi ha vuelto",
             description:
-              "Vaca madurada, Cheddar ahumado, Cebolla caramelizada, Salsa gochu",
+              "Vaca madurada; Cheddar ahumado; Cebolla caramelizada; Salsa gochu",
             image: "",
             price: "9,5€",
             extras: [],
@@ -90,7 +92,7 @@ export const burger1 = [
             id: 3,
             name: "Peky",
             description:
-              "Vaca madurada, Cheddar, Pulled pork a la secret bbq, Cebolla caramelizada, Queso de cabra, Nuestra salsa bourbon",
+              "Vaca madurada; Cheddar; Pulled pork a la secret bbq; Cebolla caramelizada; Queso de cabra; Nuestra salsa bourbon",
             image: "",
             price: "11,5€",
             extras: [],
@@ -100,7 +102,7 @@ export const burger1 = [
             id: 4,
             name: "Il padrino",
             description:
-              "Vaca madurada, Cheddar, Crema de trufa negra, Escamas de parmesano, Mermelada de bacon",
+              "Vaca madurada; Cheddar; Crema de trufa negra; Escamas de parmesano; Mermelada de bacon",
             image: "",
             price: "11,5€",
             extras: [],
@@ -110,7 +112,7 @@ export const burger1 = [
             id: 5,
             name: "Special one",
             description:
-              "Vaca madurada, Cheddar, Bacon, Cebolla caramelizada, Secret BBQ, Crema de provolone dulce",
+              "Vaca madurada; Cheddar; Bacon; Cebolla caramelizada; Secret BBQ; Crema de provolone dulce",
             image: "",
             price: "11,5€",
             extras: [],
@@ -120,7 +122,7 @@ export const burger1 = [
             id: 6,
             name: "Super mario",
             description:
-              "2 discos de 110 gr de vaca madurada, Queso monterrey jack, Turrón de foie, Sirope de mapple",
+              "2 discos de 110 gr de vaca madurada; Queso monterrey jack; Turrón de foie; Sirope de mapple",
             image: "",
             price: "12€",
             extras: [],
@@ -130,7 +132,7 @@ export const burger1 = [
             id: 7,
             name: "La will",
             description:
-              "Burguer de pollo rebozado con cheddar, Iceber, Bacon, Salsa thousand island con cebollino",
+              "Burguer de pollo rebozado con cheddar; Iceber; Bacon; Salsa thousand island con cebollino",
             image: "",
             price: "10€",
             extras: [],
@@ -182,7 +184,7 @@ export const burger1 = [
             id: 4,
             name: "Menú infantil",
             description:
-              "Nuestro pan brioche, Burguer de vaca madurada (muy hecha), Cheddar, Patatas, Bebida",
+              "Nuestro pan brioche; Burguer de vaca madurada (muy hecha); Cheddar; Patatas; Bebida",
             image: "",
             price: "10€",
             extras: [],

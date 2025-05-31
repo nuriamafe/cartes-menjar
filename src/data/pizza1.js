@@ -3,7 +3,8 @@ export const pizza1 = [
     name: "Ahh! Dios pizza",
     description: "Pizzes i entrepans",
     information:
-      "Per a emportar i a domicili, Horari: dijous a diumenge de 19h a 22:30h, Afegix ingredients al teu gusr per 0'60€ individual i 1'10€ familiar",
+      "Per a emportar i a domicili; Afegix ingredients al teu gusr per 0'60€ individual i 1'10€ familiar",
+    restaurantHours: "Horari: dijous a diumenge de 19h a 22:30h",
     phone: "643 15 41 15",
     address: "Carrer de Sant Cristòfol, 6, 46410 Sueca, Valencia",
     sections: [
@@ -14,7 +15,7 @@ export const pizza1 = [
           {
             id: 0,
             name: "Margarita individual",
-            description: "Tomaca, Formatge",
+            description: "Tomaca; Formatge",
             image: "",
             price: "5,70€",
             extras: [],
@@ -23,7 +24,7 @@ export const pizza1 = [
           {
             id: 1,
             name: "Romana individual",
-            description: "Tomaca, Formatge, Pernil dolç",
+            description: "Tomaca; Formatge; Pernil dolç",
             image: "",
             price: "7,00€",
             extras: [],
@@ -32,7 +33,7 @@ export const pizza1 = [
           {
             id: 2,
             name: "Peperoni individual",
-            description: "Tomaca, Formatge, Xoriço",
+            description: "Tomaca; Formatge; Xoriço",
             image: "",
             price: "7,00€",
             extras: [],
@@ -41,7 +42,7 @@ export const pizza1 = [
           {
             id: 3,
             name: "Peperoni picant individual",
-            description: "Tomaca, Formatge, Xoriço picant",
+            description: "Tomaca; Formatge; Xoriço picant",
             image: "",
             price: "7,00€",
             extras: [],
@@ -50,7 +51,7 @@ export const pizza1 = [
           {
             id: 4,
             name: "Xampinyons individual",
-            description: "Tomaca, Formatge, Pernil dolç, Xampinyons",
+            description: "Tomaca; Formatge; Pernil dolç; Xampinyons",
             image: "",
             price: "7,40€",
             extras: [],
@@ -59,7 +60,7 @@ export const pizza1 = [
           {
             id: 5,
             name: "Frankfurt individual",
-            description: "Tomaca, Formatge, Pernil dolç, Frankfurt",
+            description: "Tomaca; Formatge; Pernil dolç; Frankfurt",
             image: "",
             price: "7,40€",
             extras: [],
@@ -68,7 +69,7 @@ export const pizza1 = [
           {
             id: 6,
             name: "Tropical individual",
-            description: "Tomaquet, Formatge, Pernil dolç, Pinya",
+            description: "Tomaquet; Formatge; Pernil dolç; Pinya",
             image: "",
             price: "7,40€",
             extras: [],
@@ -77,7 +78,7 @@ export const pizza1 = [
           {
             id: 7,
             name: "Carbonatora individual",
-            description: "Tomaca, Formatge, Tonyina, Ceba",
+            description: "Tomaca; Formatge; Tonyina; Ceba",
             image: "",
             price: "7,40€",
             extras: [],
@@ -86,7 +87,7 @@ export const pizza1 = [
           {
             id: 8,
             name: "Mallorca individual",
-            description: "Tomaca, Formatge, Mallorquina, Ceba caramel·litzada",
+            description: "Tomaca; Formatge; Mallorquina; Ceba caramel·litzada",
             image: "",
             price: "7,40€",
             extras: [],
@@ -95,7 +96,7 @@ export const pizza1 = [
           {
             id: 9,
             name: "Altamar individual",
-            description: "Tomaca, Formatge, Tonyina, Anxova",
+            description: "Tomaca; Formatge; Tonyina; Anxova",
             image: "",
             price: "7,40€",
             extras: [],
@@ -104,7 +105,7 @@ export const pizza1 = [
           {
             id: 10,
             name: "Bacó individual",
-            description: "Tomaca, Formatge, Bacó, Xampinyons",
+            description: "Tomaca; Formatge; Bacó; Xampinyons",
             image: "",
             price: "7,40€",
             extras: [],
@@ -113,7 +114,7 @@ export const pizza1 = [
           {
             id: 11,
             name: "Negreta individual",
-            description: "Tomaca, Formatge, Botifarra, Ceba",
+            description: "Tomaca; Formatge; Botifarra; Ceba",
             image: "",
             price: "7,40€",
             extras: [],
@@ -123,7 +124,7 @@ export const pizza1 = [
             id: 12,
             name: "Rúcula individual",
             description:
-              "Tomaca, Formatge, Tomaca cherry, Rúcula, Formatge de cabra",
+              "Tomaca; Formatge; Tomaca cherry; Rúcula; Formatge de cabra",
             image: "",
             price: "7,90€",
             extras: [],
@@ -133,7 +134,7 @@ export const pizza1 = [
             id: 13,
             name: "Serraneta individual",
             description:
-              "Tomaca, Formatge, Pernil serrà, Tomaca natural, Philadelphia",
+              "Tomaca; Formatge; Pernil serrà; Tomaca natural; Philadelphia",
             image: "",
             price: "7,90€",
             extras: [],
@@ -142,7 +143,7 @@ export const pizza1 = [
           {
             id: 14,
             name: "Aloha individual",
-            description: "Tomaca, Formatge, Bacó, Dàtils, Pinya",
+            description: "Tomaca; Formatge; Bacó; Dàtils; Pinya",
             image: "",
             price: "7,90€",
             extras: [],
@@ -151,7 +152,7 @@ export const pizza1 = [
           {
             id: 15,
             name: "Ohana individual",
-            description: "Nata, Formatge, Bacó, Pernil dolç",
+            description: "Nata; Formatge; Bacó; Pernil dolç",
             image: "",
             price: "7,90€",
             extras: [],
@@ -161,7 +162,7 @@ export const pizza1 = [
             id: 16,
             name: "Mediterrània individual",
             description:
-              "Tomaca, Formatge, Carxofa, Tomaca natural, Dacsa, Espàrrecs",
+              "Tomaca; Formatge; Carxofa; Tomaca natural; Dacsa; Espàrrecs",
             image: "",
             price: "8,40€",
             extras: [],
@@ -170,7 +171,7 @@ export const pizza1 = [
           {
             id: 17,
             name: "Capritxora individual",
-            description: "Tomaca, Formatge, Salmó, Gambes",
+            description: "Tomaca; Formatge; Salmó; Gambes",
             image: "",
             price: "8,40€",
             extras: [],
@@ -179,7 +180,7 @@ export const pizza1 = [
           {
             id: 18,
             name: "Senyoret individual",
-            description: "Tomaca, Formatge, Salmó, Roquefort",
+            description: "Tomaca; Formatge; Salmó; Roquefort",
             image: "",
             price: "8,40€",
             extras: [],
@@ -189,7 +190,7 @@ export const pizza1 = [
             id: 19,
             name: "4 Estacions individual",
             description:
-              "Tomaca, Formatge, Pernil dolç, Xoriço, Xampinyons, Carxofa",
+              "Tomaca; Formatge; Pernil dolç; Xoriço; Xampinyons; Carxofa",
             image: "",
             price: "8,40€",
             extras: [],
@@ -199,7 +200,7 @@ export const pizza1 = [
             id: 20,
             name: "Formatges individual",
             description:
-              "Tomaca, Formatge, Edam, Roquefort, Philadelphia, Emmental",
+              "Tomaca; Formatge; Edam; Roquefort; Philadelphia; Emmental",
             image: "",
             price: "8,40€",
             extras: [],
@@ -208,7 +209,7 @@ export const pizza1 = [
           {
             id: 21,
             name: "Creïlles individual",
-            description: "Tomaca, Formatge, Carn picà, Bacó, Creïlles, Ou",
+            description: "Tomaca; Formatge; Carn picà; Bacó; Creïlles; Ou",
             image: "",
             price: "8,40€",
             extras: [],
@@ -217,7 +218,7 @@ export const pizza1 = [
           {
             id: 22,
             name: "Barbacora individual",
-            description: "Tomaca, Formatge, Carn picà, Ceba, Salsa barbacoa",
+            description: "Tomaca; Formatge; Carn picà; Ceba; Salsa barbacoa",
             image: "",
             price: "8,40€",
             extras: [],
@@ -227,7 +228,7 @@ export const pizza1 = [
             id: 23,
             name: "Jalisco individual",
             description:
-              "Tomaca, Formatge, Carn picà, Ceba, Salsa barbacoa, Tabasco",
+              "Tomaca; Formatge; Carn picà; Ceba; Salsa barbacoa; Tabasco",
             image: "",
             price: "8,40€",
             extras: [],
@@ -236,7 +237,7 @@ export const pizza1 = [
           {
             id: 24,
             name: "Carbonara individual",
-            description: "Nata, Formatge, Bacó, Xampinyons, Ou marejat",
+            description: "Nata; Formatge; Bacó; Xampinyons; Ou marejat",
             image: "",
             price: "8,40€",
             extras: [],
@@ -245,7 +246,7 @@ export const pizza1 = [
           {
             id: 25,
             name: "Cabra individual",
-            description: "Tomaca, Formatge, Dàtils, Formatge de cabra",
+            description: "Tomaca; Formatge; Dàtils; Formatge de cabra",
             image: "",
             price: "8,40€",
             extras: [],
@@ -254,7 +255,7 @@ export const pizza1 = [
           {
             id: 26,
             name: "Penyeta individual",
-            description: "Tomaca, Formatge, Tonyina, Ceba, Ou, Anxova",
+            description: "Tomaca; Formatge; Tonyina; Ceba; Ou; Anxova",
             image: "",
             price: "8,40€",
             extras: [],
@@ -263,7 +264,7 @@ export const pizza1 = [
           {
             id: 27,
             name: "Marinera individual",
-            description: "Tomaca, Formatge, Tonyina, Salmó, Gambes",
+            description: "Tomaca; Formatge; Tonyina; Salmó; Gambes",
             image: "",
             price: "8,40€",
             extras: [],
@@ -272,7 +273,7 @@ export const pizza1 = [
           {
             id: 28,
             name: "Nova individual",
-            description: "Tomaca, Formatge, Tonyina, Philadelphia, Ou marejat",
+            description: "Tomaca; Formatge; Tonyina; Philadelphia; Ou marejat",
             image: "",
             price: "8,40€",
             extras: [],
@@ -282,7 +283,7 @@ export const pizza1 = [
             id: 29,
             name: "Campera individual",
             description:
-              "Tomaca, Formatge, Carxofa, Pimentó, Espàrrecs, Xampinyons, Ceba",
+              "Tomaca; Formatge; Carxofa; Pimentó; Espàrrecs; Xampinyons; Ceba",
             image: "",
             price: "8,60€",
             extras: [],
@@ -292,7 +293,7 @@ export const pizza1 = [
             id: 30,
             name: "De la casa individual",
             description:
-              "Tomaca, Formatge, Pernil dolç, Xoriço, Bacó, Ceba, Ou",
+              "Tomaca; Formatge; Pernil dolç; Xoriço; Bacó; Ceba; Ou",
             image: "",
             price: "8,60€",
             extras: [],
@@ -301,7 +302,7 @@ export const pizza1 = [
           {
             id: 31,
             name: "MelMel individual",
-            description: "Tomaca, Formatge, Carn picà, Ceba, Mel",
+            description: "Tomaca; Formatge; Carn picà; Ceba; Mel",
             image: "",
             price: "8,60€",
             extras: [],
@@ -311,7 +312,7 @@ export const pizza1 = [
             id: 32,
             name: "Mestral individual",
             description:
-              "Tomaca, Formatge, Tonyina, Palets de marisc, Gambes, Anxova",
+              "Tomaca; Formatge; Tonyina; Palets de marisc; Gambes; Anxova",
             image: "",
             price: "8,60€",
             extras: [],
@@ -320,7 +321,7 @@ export const pizza1 = [
           {
             id: 33,
             name: "Ola! Ola individual",
-            description: "Mostassa, Formatge, Pit de pollastre, Mel",
+            description: "Mostassa; Formatge; Pit de pollastre; Mel",
             image: "",
             price: "8,60€",
             extras: [],
@@ -329,7 +330,7 @@ export const pizza1 = [
           {
             id: 34,
             name: "Nom de la pizzeria individual",
-            description: "Tomaca, Formatge, Xoriço, Philadelphia, Tonyina, Ou",
+            description: "Tomaca; Formatge; Xoriço; Philadelphia; Tonyina; Ou",
             image: "",
             price: "8,60€",
             extras: [],
@@ -344,7 +345,7 @@ export const pizza1 = [
           {
             id: 0,
             name: "Margarita familiar",
-            description: "Tomaca, Formatge",
+            description: "Tomaca; Formatge",
             image: "",
             price: "11,00€",
             extras: [],
@@ -353,7 +354,7 @@ export const pizza1 = [
           {
             id: 1,
             name: "Romana familiar",
-            description: "Tomaca, Formatge, Pernil dolç",
+            description: "Tomaca; Formatge; Pernil dolç",
             image: "",
             price: "13,00€",
             extras: [],
@@ -362,7 +363,7 @@ export const pizza1 = [
           {
             id: 2,
             name: "Peperoni familiar",
-            description: "Tomaca, Formatge, Xoriço",
+            description: "Tomaca; Formatge; Xoriço",
             image: "",
             price: "13,00€",
             extras: [],
@@ -371,7 +372,7 @@ export const pizza1 = [
           {
             id: 3,
             name: "Peperoni picant familiar",
-            description: "Tomaca, Formatge, Xoriço picant",
+            description: "Tomaca; Formatge; Xoriço picant",
             image: "",
             price: "13,00€",
             extras: [],
@@ -380,7 +381,7 @@ export const pizza1 = [
           {
             id: 4,
             name: "Xampinyons familiar",
-            description: "Tomaca, Formatge, Pernil dolç, Xampinyons",
+            description: "Tomaca; Formatge; Pernil dolç; Xampinyons",
             image: "",
             price: "14,00€",
             extras: [],
@@ -389,7 +390,7 @@ export const pizza1 = [
           {
             id: 5,
             name: "Frankfurt familiar",
-            description: "Tomaca, Formatge, Pernil dolç, Frankfurt",
+            description: "Tomaca; Formatge; Pernil dolç; Frankfurt",
             image: "",
             price: "14,00€",
             extras: [],
@@ -398,7 +399,7 @@ export const pizza1 = [
           {
             id: 6,
             name: "Tropical familiar",
-            description: "Tomaquet, Formatge, Pernil dolç, Pinya",
+            description: "Tomaquet; Formatge; Pernil dolç; Pinya",
             image: "",
             price: "14,00€",
             extras: [],
@@ -407,7 +408,7 @@ export const pizza1 = [
           {
             id: 7,
             name: "Carbonatora familiar",
-            description: "Tomaca, Formatge, Tonyina, Ceba",
+            description: "Tomaca; Formatge; Tonyina; Ceba",
             image: "",
             price: "14,00€",
             extras: [],
@@ -416,7 +417,7 @@ export const pizza1 = [
           {
             id: 8,
             name: "Mallorca familiar",
-            description: "Tomaca, Formatge, Mallorquina, Ceba caramel·litzada",
+            description: "Tomaca; Formatge; Mallorquina; Ceba caramel·litzada",
             image: "",
             price: "14,00€",
             extras: [],
@@ -425,7 +426,7 @@ export const pizza1 = [
           {
             id: 9,
             name: "Altamar familiar",
-            description: "Tomaca, Formatge, Tonyina, Anxova",
+            description: "Tomaca; Formatge; Tonyina; Anxova",
             image: "",
             price: "14,00€",
             extras: [],
@@ -434,7 +435,7 @@ export const pizza1 = [
           {
             id: 10,
             name: "Bacó familiar",
-            description: "Tomaca, Formatge, Bacó, Xampinyons",
+            description: "Tomaca; Formatge; Bacó; Xampinyons",
             image: "",
             price: "14,00€",
             extras: [],
@@ -443,7 +444,7 @@ export const pizza1 = [
           {
             id: 11,
             name: "Negreta familiar",
-            description: "Tomaca, Formatge, Botifarra, Ceba",
+            description: "Tomaca; Formatge; Botifarra; Ceba",
             image: "",
             price: "14,00€",
             extras: [],
@@ -453,7 +454,7 @@ export const pizza1 = [
             id: 12,
             name: "Rúcula familiar",
             description:
-              "Tomaca, Formatge, Tomaca cherry, Rúcula, Formatge de cabra",
+              "Tomaca; Formatge; Tomaca cherry; Rúcula; Formatge de cabra",
             image: "",
             price: "15,00€",
             extras: [],
@@ -463,7 +464,7 @@ export const pizza1 = [
             id: 13,
             name: "Serraneta familiar",
             description:
-              "Tomaca, Formatge, Pernil serrà, Tomaca natural, Philadelphia",
+              "Tomaca; Formatge; Pernil serrà; Tomaca natural; Philadelphia",
             image: "",
             price: "15,00€",
             extras: [],
@@ -472,7 +473,7 @@ export const pizza1 = [
           {
             id: 14,
             name: "Aloha familiar",
-            description: "Tomaca, Formatge, Bacó, Dàtils, Pinya",
+            description: "Tomaca; Formatge; Bacó; Dàtils; Pinya",
             image: "",
             price: "15,00€",
             extras: [],
@@ -481,7 +482,7 @@ export const pizza1 = [
           {
             id: 15,
             name: "Ohana familiar",
-            description: "Nata, Formatge, Bacó, Pernil dolç",
+            description: "Nata; Formatge; Bacó; Pernil dolç",
             image: "",
             price: "15,00€",
             extras: [],
@@ -491,7 +492,7 @@ export const pizza1 = [
             id: 16,
             name: "Mediterrània familiar",
             description:
-              "Tomaca, Formatge, Carxofa, Tomaca natural, Dacsa, Espàrrecs",
+              "Tomaca; Formatge; Carxofa; Tomaca natural; Dacsa; Espàrrecs",
             image: "",
             price: "15,50€",
             extras: [],
@@ -500,7 +501,7 @@ export const pizza1 = [
           {
             id: 17,
             name: "Capritxora familiar",
-            description: "Tomaca, Formatge, Salmó, Gambes",
+            description: "Tomaca; Formatge; Salmó; Gambes",
             image: "",
             price: "15,50€",
             extras: [],
@@ -509,7 +510,7 @@ export const pizza1 = [
           {
             id: 18,
             name: "Senyoret familiar",
-            description: "Tomaca, Formatge, Salmó, Roquefort",
+            description: "Tomaca; Formatge; Salmó; Roquefort",
             image: "",
             price: "15,50€",
             extras: [],
@@ -519,7 +520,7 @@ export const pizza1 = [
             id: 19,
             name: "4 Estacions familiar",
             description:
-              "Tomaca, Formatge, Pernil dolç, Xoriço, Xampinyons, Carxofa",
+              "Tomaca; Formatge; Pernil dolç; Xoriço; Xampinyons; Carxofa",
             image: "",
             price: "15,50€",
             extras: [],
@@ -529,7 +530,7 @@ export const pizza1 = [
             id: 20,
             name: "Formatges familiar",
             description:
-              "Tomaca, Formatge, Edam, Roquefort, Philadelphia, Emmental",
+              "Tomaca; Formatge; Edam; Roquefort; Philadelphia; Emmental",
             image: "",
             price: "15,50€",
             extras: [],
@@ -538,7 +539,7 @@ export const pizza1 = [
           {
             id: 21,
             name: "Creïlles familiar",
-            description: "Tomaca, Formatge, Carn picà, Bacó, Creïlles, Ou",
+            description: "Tomaca; Formatge; Carn picà; Bacó; Creïlles; Ou",
             image: "",
             price: "15,50€",
             extras: [],
@@ -547,7 +548,7 @@ export const pizza1 = [
           {
             id: 22,
             name: "Barbacora familiar",
-            description: "Tomaca, Formatge, Carn picà, Ceba, Salsa barbacoa",
+            description: "Tomaca; Formatge; Carn picà; Ceba; Salsa barbacoa",
             image: "",
             price: "15,50€",
             extras: [],
@@ -557,7 +558,7 @@ export const pizza1 = [
             id: 23,
             name: "Jalisco familiar",
             description:
-              "Tomaca, Formatge, Carn picà, Ceba, Salsa barbacoa, Tabasco",
+              "Tomaca; Formatge; Carn picà; Ceba; Salsa barbacoa; Tabasco",
             image: "",
             price: "15,50€",
             extras: [],
@@ -566,7 +567,7 @@ export const pizza1 = [
           {
             id: 24,
             name: "Carbonara familiar",
-            description: "Nata, Formatge, Bacó, Xampinyons, Ou marejat",
+            description: "Nata; Formatge; Bacó; Xampinyons; Ou marejat",
             image: "",
             price: "15,50€",
             extras: [],
@@ -575,7 +576,7 @@ export const pizza1 = [
           {
             id: 25,
             name: "Cabra familiar",
-            description: "Tomaca, Formatge, Dàtils, Formatge de cabra",
+            description: "Tomaca; Formatge; Dàtils; Formatge de cabra",
             image: "",
             price: "15,50€",
             extras: [],
@@ -584,7 +585,7 @@ export const pizza1 = [
           {
             id: 26,
             name: "Penyeta familiar",
-            description: "Tomaca, Formatge, Tonyina, Ceba, Ou, Anxova",
+            description: "Tomaca; Formatge; Tonyina; Ceba; Ou; Anxova",
             image: "",
             price: "15,50€",
             extras: [],
@@ -593,7 +594,7 @@ export const pizza1 = [
           {
             id: 27,
             name: "Marinera familiar",
-            description: "Tomaca, Formatge, Tonyina, Salmó, Gambes",
+            description: "Tomaca; Formatge; Tonyina; Salmó; Gambes",
             image: "",
             price: "15,50€",
             extras: [],
@@ -602,7 +603,7 @@ export const pizza1 = [
           {
             id: 28,
             name: "Nova familiar",
-            description: "Tomaca, Formatge, Tonyina, Philadelphia, Ou marejat",
+            description: "Tomaca; Formatge; Tonyina; Philadelphia; Ou marejat",
             image: "",
             price: "15,50€",
             extras: [],
@@ -612,7 +613,7 @@ export const pizza1 = [
             id: 29,
             name: "Campera familiar",
             description:
-              "Tomaca, Formatge, Carxofa, Pimentó, Espàrrecs, Xampinyons, Ceba",
+              "Tomaca; Formatge; Carxofa; Pimentó; Espàrrecs; Xampinyons; Ceba",
             image: "",
             price: "16,00€",
             extras: [],
@@ -622,7 +623,7 @@ export const pizza1 = [
             id: 30,
             name: "De la casa familiar",
             description:
-              "Tomaca, Formatge, Pernil dolç, Xoriço, Bacó, Ceba, Ou",
+              "Tomaca; Formatge; Pernil dolç; Xoriço; Bacó; Ceba; Ou",
             image: "",
             price: "16,00€",
             extras: [],
@@ -631,7 +632,7 @@ export const pizza1 = [
           {
             id: 31,
             name: "MelMel familiar",
-            description: "Tomaca, Formatge, Carn picà, Ceba, Mel",
+            description: "Tomaca; Formatge; Carn picà; Ceba; Mel",
             image: "",
             price: "16,00€",
             extras: [],
@@ -641,7 +642,7 @@ export const pizza1 = [
             id: 32,
             name: "Mestral familiar",
             description:
-              "Tomaca, Formatge, Tonyina, Palets de marisc, Gambes, Anxova",
+              "Tomaca; Formatge; Tonyina; Palets de marisc; Gambes; Anxova",
             image: "",
             price: "16,00€",
             extras: [],
@@ -650,7 +651,7 @@ export const pizza1 = [
           {
             id: 33,
             name: "Ola! Ola familiar",
-            description: "Mostassa, Formatge, Pit de pollastre, Mel",
+            description: "Mostassa; Formatge; Pit de pollastre; Mel",
             image: "",
             price: "16,00€",
             extras: [],
@@ -659,7 +660,7 @@ export const pizza1 = [
           {
             id: 34,
             name: "Nom de la pizzeria familiar",
-            description: "Tomaca, Formatge, Xoriço, Philadelphia, Tonyina, Ou",
+            description: "Tomaca; Formatge; Xoriço; Philadelphia; Tonyina; Ou",
             image: "",
             price: "16,00€",
             extras: [],

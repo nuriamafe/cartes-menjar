@@ -10,7 +10,7 @@ export const restaurantsInfo = [
     id: 1,
     jsonName: "burger1",
     name: "Ahupapi",
-    image: require("../assets/restaurants/burguer1.jpg"),
+    image: require("../assets/restaurants/burger1.jpg"),
   },
   {
     id: 2,
@@ -29,5 +29,11 @@ export const restaurantsInfo = [
     jsonName: "japanese1",
     name: "Olevantari Sushi Bar",
     image: require("../assets/restaurants/japanese1.jpg"),
+  },
+  {
+    id: 5,
+    jsonName: "japanese2",
+    name: "Jo a què vaig?",
+    image: require("../assets/restaurants/japanese2.jpg"),
   },
 ];

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import MenuSection from "../components/MenuSection";
 import {
   Flex,
@@ -7,9 +7,9 @@ import {
   Spin,
   FloatButton,
   Select,
-  Popover,
   Button,
   Space,
+  Modal,
 } from "antd";
 import {
   InfoCircleOutlined,
@@ -23,6 +23,7 @@ function RestaurantPage() {
   const { restaurantName } = useParams();
   const { restaurantInfo, loading, fetchRestaurantInfo, setRestaurantInfo } =
     useRestaurant();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     setRestaurantInfo(null);
@@ -33,8 +34,15 @@ function RestaurantPage() {
     return <Spin />;
   }
 
-  const { name, information, description, address, phone, sections } =
-    restaurantInfo[0];
+  const {
+    name,
+    information,
+    description,
+    address,
+    phone,
+    sections,
+    restaurantHours,
+  } = restaurantInfo[0];
 
   const handleChange = (value) => {
     const targetSection = document.getElementById(value);
@@ -48,6 +56,51 @@ function RestaurantPage() {
       });
     }
   };
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+  const splitText = (text) =>
+    restaurantInfo && text.split(";").map((word) => word.trim());
+
+  const contentInformation = (
+    <Space direction="vertical">
+      {information && (
+        <>
+          <Title level={5} style={{ marginBottom: "0em" }}>
+            Informació
+          </Title>
+          {splitText(information).map((word, index) => (
+            <Text key={index}>{word}</Text>
+          ))}
+        </>
+      )}
+
+      {restaurantHours && (
+        <>
+          <Title level={5} style={{ marginTop: "1em", marginBottom: "0em" }}>
+            Horari
+          </Title>
+          {splitText(restaurantHours).map((word, index) => (
+            <Text key={index}>{word}</Text>
+          ))}
+        </>
+      )}
+    </Space>
+  );
+
+  const contentPhone = splitText(phone).map((word, index) => (
+    <Space direction="horizontal">
+      <PhoneOutlined />
+      <Link key={index} href={`tel:${word}`} target="_blank">
+        {word}
+      </Link>
+    </Space>
+  ));
 
   const renderDescriptionSection = () => (
     <Title level={4} style={{ marginTop: ".5em" }}>
@@ -64,12 +117,7 @@ function RestaurantPage() {
             {address}
           </Link>
         </Space>
-        <Space direction="horizontal">
-          <PhoneOutlined />
-          <Link href={`tel:${phone}`} target="_blank">
-            {phone}
-          </Link>
-        </Space>
+        <Space direction="vertical">{contentPhone}</Space>
       </Space>
     </Flex>
   );
@@ -102,17 +150,6 @@ function RestaurantPage() {
     </Flex>
   );
 
-  const splitDescription =
-    restaurantInfo && information.split(",").map((word) => word.trim());
-
-  const content = (
-    <Space direction="vertical">
-      {splitDescription.map((word, index) => (
-        <Text key={index}>{word}</Text>
-      ))}
-    </Space>
-  );
-
   return (
     <>
       {restaurantInfo && (
@@ -121,19 +158,28 @@ function RestaurantPage() {
           <Flex justify="center" className="RestaurantInfo">
             <Space direction="horiontal">
               <Title level={2}>{name}</Title>
-              {information && (
-                <Popover content={content} trigger="click" placement="bottom">
+              {(information || restaurantHours) && (
+                <>
                   <Button
                     shape="circle"
                     icon={<InfoCircleOutlined />}
                     className="Info"
+                    onClick={showModal}
                   />
-                </Popover>
+                  <Modal
+                    closable={{ "aria-label": "Custom Close Button" }}
+                    open={isModalOpen}
+                    footer={null}
+                    onCancel={handleCancel}
+                  >
+                    {contentInformation}
+                  </Modal>
+                </>
               )}
             </Space>
           </Flex>
 
-          {description && renderDescriptionSection}
+          {description && renderDescriptionSection()}
 
           {renderContactSection()}
           {renderSelectSection()}

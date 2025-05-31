@@ -58,3 +58,10 @@
 .ant-select-item-option-content {
   font-size: 16px;
 }
+
+.ant-modal-content {
+  .ant-modal-body {
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+  }
+}

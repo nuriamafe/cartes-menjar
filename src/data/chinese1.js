@@ -2,9 +2,10 @@ export const chinese1 = [
   {
     name: "Jon Lon",
     description: "Comida para llevar (Recoger en el local)",
-    information: "👍Recomendado, 🌶️ Picante",
+    information: "👍Recomendado; 🌶️ Picante",
+    restaurantHours: "",
     phone: "96 173 09 24",
-    address: "Plaza Doctor José Mongrell, 5, Cullera (Valencia)",
+    address: "Plaza Doctor José Mongrell; 5; Cullera (Valencia)",
     sections: [
       {
         id: 0,
@@ -744,7 +745,7 @@ export const chinese1 = [
           },
           {
             id: 14,
-            name: "Shai Té, ternera",
+            name: "Shai Té; ternera",
             description: "",
             image: "",
             price: "7,55€",
@@ -814,7 +815,7 @@ export const chinese1 = [
           {
             id: 2,
             name: "Cerveza",
-            description: "Mahou, San Miguel, Heineken",
+            description: "Mahou; San Miguel; Heineken",
             image: "",
             price: "2,45€",
             extras: [],
@@ -822,7 +823,7 @@ export const chinese1 = [
           },
           {
             id: 3,
-            name: "Shandy, Zumo de piña, Tónica",
+            name: "Shandy; Zumo de piña; Tónica",
             description: "",
             image: "",
             price: "2,25€",
@@ -840,7 +841,7 @@ export const chinese1 = [
           },
           {
             id: 5,
-            name: "Trinaranjus, Nestea y Aquarius",
+            name: "Trinaranjus; Nestea y Aquarius",
             description: "",
             image: "",
             price: "2,45€",
@@ -849,7 +850,7 @@ export const chinese1 = [
           },
           {
             id: 6,
-            name: "Coca cola, Fanta",
+            name: "Coca cola; Fanta",
             description: "",
             image: "",
             price: "2,35€",
@@ -859,7 +860,7 @@ export const chinese1 = [
           {
             id: 7,
             name: "Vino de la casa",
-            description: "Blanco, rosado y tinto",
+            description: "Blanco; rosado y tinto",
             image: "",
             price: "6,55€",
             extras: [],
@@ -893,7 +894,7 @@ export const chinese1 = [
             id: 0,
             name: "2 Personas",
             description:
-              "Ensalada china, Rollo de primavera (2), Arroz frito tres delicias, Ternera con setas chinas y bambú, Bolas de pollo, Refresco",
+              "Ensalada china; Rollo de primavera (2); Arroz frito tres delicias; Ternera con setas chinas y bambú; Bolas de pollo; Refresco",
             image: "",
             price: "25,35€",
             extras: [],
@@ -903,7 +904,7 @@ export const chinese1 = [
             id: 1,
             name: "3 Personas",
             description:
-              "Ensalada china, Rollo de primavera (3), Pan de gambas, Arroz frito tres delicias, Ternera con setas chinas y bambú, Bolas de pollo, Pollo con almendras, Refresco",
+              "Ensalada china; Rollo de primavera (3); Pan de gambas; Arroz frito tres delicias; Ternera con setas chinas y bambú; Bolas de pollo; Pollo con almendras; Refresco",
             image: "",
             price: "37,95€",
             extras: [],
@@ -913,7 +914,7 @@ export const chinese1 = [
             id: 2,
             name: "4 Personas",
             description:
-              "Ensalada china, Rollo de primavera (4), Pan de gambas, Arroz frito tres delicias (2 platos), Ternera con setas chinas y bambú, Bolas de pollo, Pollo con almendras, Gambas a la salsa agridulce, Refresco",
+              "Ensalada china; Rollo de primavera (4); Pan de gambas; Arroz frito tres delicias (2 platos); Ternera con setas chinas y bambú; Bolas de pollo; Pollo con almendras; Gambas a la salsa agridulce; Refresco",
             image: "",
             price: "50,35€",
             extras: [],
@@ -923,7 +924,7 @@ export const chinese1 = [
             id: 3,
             name: "5 Personas",
             description:
-              "Ensalada china, Rollo de primavera (5), Pan de gambas, Arroz frito tres delicias (2 platos), Tallarines fritos, Ternera con setas chinas y bambú, Bolas de pollo, Pollo con almendras, Gambas a la salsa agridulce, Refresco, Babi Pangan, Refresco",
+              "Ensalada china; Rollo de primavera (5); Pan de gambas; Arroz frito tres delicias (2 platos); Tallarines fritos; Ternera con setas chinas y bambú; Bolas de pollo; Pollo con almendras; Gambas a la salsa agridulce; Refresco; Babi Pangan; Refresco",
             image: "",
             price: "62,95€",
             extras: [],
@@ -933,7 +934,7 @@ export const chinese1 = [
             id: 4,
             name: "6 Persones",
             description:
-              "Ensalada china, Rollo de primavera (6), Pan de gambas, Arroz frito tres delicias (2 platos), Tallarines fritos, Ternera con setas chinas y bambú, Bolas de pollo, Pollo con almendras, Gambas a la salsa agridulce, Babi Pangan, Langostino frito, Refresco",
+              "Ensalada china; Rollo de primavera (6); Pan de gambas; Arroz frito tres delicias (2 platos); Tallarines fritos; Ternera con setas chinas y bambú; Bolas de pollo; Pollo con almendras; Gambas a la salsa agridulce; Babi Pangan; Langostino frito; Refresco",
             image: "",
             price: "76,65€",
             extras: [],
@@ -943,7 +944,7 @@ export const chinese1 = [
             id: 5,
             name: "8 Personas",
             description:
-              "Ensalada china (2), Rollo de primavera (8), Pan de gambas, Arroz frito tres delicias (2 platos), Tallarines fritos (2 platos), Ternera con patatas, Ternera con setas chinas y bambú, Bolas de pollo, Pollo al limón, Kon Bao de pollo, Langostino frito, Gambas a la salsa agridulce, Babi Pangan, Refresco",
+              "Ensalada china (2); Rollo de primavera (8); Pan de gambas; Arroz frito tres delicias (2 platos); Tallarines fritos (2 platos); Ternera con patatas; Ternera con setas chinas y bambú; Bolas de pollo; Pollo al limón; Kon Bao de pollo; Langostino frito; Gambas a la salsa agridulce; Babi Pangan; Refresco",
             image: "",
             price: "99,85€",
             extras: [],

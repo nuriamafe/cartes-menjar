@@ -1,0 +1,73 @@
+export const japanese2 = [
+  {
+    name: "Jo a què vaig?",
+    description: "Sushi & Teppanyaki Buffet Libre",
+    information: "Comida para llevar",
+    restaurantHours:
+      "Lunes-Viernes mediodía; Fines de semana y festivos; Viernes noche-Domingo; Abierto todos los días; 12.00h a 16.30h y 19.00h a 00.00h",
+    phone: "960 150 197; 744 649 954",
+    address: "Plaza Doctor José Mongrell, 5, Cullera (Valencia)",
+    sections: [
+      {
+        id: 0,
+        name: "Sopas",
+        items: [
+          {
+            id: 0,
+            name: "Sopa de pollo",
+            description: "",
+            image: "",
+            price: "3,05€",
+            extras: [],
+            allergens: [],
+          },
+          {
+            id: 1,
+            name: "Sopa de aletas de tiburón",
+            description: "",
+            image: "",
+            price: "3,05€",
+            extras: [],
+            allergens: [],
+          },
+          {
+            id: 2,
+            name: "Sopa de cangrejo con maíz",
+            description: "",
+            image: "",
+            price: "3,35€",
+            extras: [],
+            allergens: ["crustaceans"],
+          },
+          {
+            id: 3,
+            name: "Sopa de la casa",
+            description: "",
+            image: "",
+            price: "3,35€",
+            extras: [],
+            allergens: [],
+          },
+          {
+            id: 4,
+            name: "Sopa de Won Ton",
+            description: "",
+            image: "",
+            price: "4,05€",
+            extras: [],
+            allergens: [],
+          },
+          {
+            id: 5,
+            name: "Sopa de agripicante",
+            description: "",
+            image: "",
+            price: "3,25€",
+            extras: ["faThumbsUp", "faPepperHot"],
+            allergens: [],
+          },
+        ],
+      },
+    ],
+  },
+];

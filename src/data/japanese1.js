@@ -2,7 +2,8 @@ export const japanese1 = [
   {
     name: "Olevantari Sushi Bar",
     description: "Tradicional y moderno",
-    information: "Horario Pedidos 12.30h a 16h y de 19.30h a 23:00h",
+    information: "",
+    restaurantHours: "Horario Pedidos 12.30h a 16h y de 19.30h a 23:00h",
     phone: "961 604 625",
     address: "Carrer Antònia Cerdà, 3, 46600 Alzira, Valencia",
     sections: [
@@ -681,7 +682,7 @@ export const japanese1 = [
             id: 0,
             name: "Dragon roll",
             description:
-              "Roll de gamba tepurizada, Espárragos, Topping de aguacate, Mayonesa japonesa, Masago, Salsa triyaki, Dados de pimiento, Sésamo tostado",
+              "Roll de gamba tepurizada; Espárragos; Topping de aguacate; Mayonesa japonesa; Masago; Salsa triyaki; Dados de pimiento; Sésamo tostado",
             image: "",
             price: "12,50€",
             extras: [],
@@ -699,7 +700,7 @@ export const japanese1 = [
             id: 1,
             name: "Roll top",
             description:
-              "Salmón, Queso cremoso, Topping de Salmón ahumado, Vieira, Mayonesa trufada, Huevas de ikura, Todo flambeado y coronado por hierbas de guindilla, Salsa teriyaki",
+              "Salmón; Queso cremoso; Topping de Salmón ahumado; Vieira; Mayonesa trufada; Huevas de ikura; Todo flambeado y coronado por hierbas de guindilla; Salsa teriyaki",
             image: "",
             price: "14,50€",
             extras: [],
@@ -709,7 +710,7 @@ export const japanese1 = [
             id: 2,
             name: "Tuna trufato",
             description:
-              "Atún rojo, Aguacate, Queso, Trufa, Menta teriyaki, Mezcla de sésamos",
+              "Atún rojo; Aguacate; Queso; Trufa; Menta teriyaki; Mezcla de sésamos",
             image: "",
             price: "12,90€",
             extras: [],
@@ -718,7 +719,7 @@ export const japanese1 = [
           {
             id: 3,
             name: "Roll de pluma ibérica",
-            description: "Roll de pluma ibérica, Aguacate, Salsa chimichurri",
+            description: "Roll de pluma ibérica; Aguacate; Salsa chimichurri",
             image: "",
             price: "14,10€",
             extras: [],
@@ -728,7 +729,7 @@ export const japanese1 = [
             id: 4,
             name: "Spicy gamba tempura",
             description:
-              "Roll picate, Papel de arroz relleno de gamba tempurizada, Espárrago triguero, Topping de achicoria, Mayonesa, Siracha",
+              "Roll picate; Papel de arroz relleno de gamba tempurizada; Espárrago triguero; Topping de achicoria; Mayonesa; Siracha",
             image: "",
             price: "11,50€",
             extras: [],
@@ -767,7 +768,7 @@ export const japanese1 = [
             id: 6,
             name: "Black & Roll",
             description:
-              "Roll de arroz negro, Sepia tempurizada, Espárrago triguero, All i oli especial",
+              "Roll de arroz negro; Sepia tempurizada; Espárrago triguero; All i oli especial",
             image: "",
             price: "13,50€",
             extras: [],
@@ -777,7 +778,7 @@ export const japanese1 = [
             id: 7,
             name: "Spicy tuna",
             description:
-              "Roll picante de atún, Aguacate, Tomate, Envuelto en achicoria, Papel de arroz, Topping mayonesa, Shichimi, Siracha",
+              "Roll picante de atún; Aguacate; Tomate; Envuelto en achicoria; Papel de arroz; Topping mayonesa; Shichimi; Siracha",
             image: "",
             price: "12,50€",
             extras: [],
@@ -787,7 +788,7 @@ export const japanese1 = [
             id: 8,
             name: "Foie y mango",
             description:
-              "Foie y manzana, Topping de mango carameilzado, Salsa teriyaki, Herbas de alga nori",
+              "Foie y manzana; Topping de mango carameilzado; Salsa teriyaki; Herbas de alga nori",
             image: "",
             price: "12,90€",
             extras: [],
@@ -796,7 +797,7 @@ export const japanese1 = [
           {
             id: 9,
             name: "Rollito de queso cremoso",
-            description: "Salmón, Queso cremoso, Teriyaki, Mezcla de sésamos",
+            description: "Salmón; Queso cremoso; Teriyaki; Mezcla de sésamos",
             image: "",
             price: "10,50€",
             extras: [],
@@ -806,7 +807,7 @@ export const japanese1 = [
             id: 10,
             name: "Roll de black angus",
             description:
-              "Roll de carne de black angus, Cebolla caramelizada, Tomate",
+              "Roll de carne de black angus; Cebolla caramelizada; Tomate",
             image: "",
             price: "14,50€",
             extras: [],
@@ -816,7 +817,7 @@ export const japanese1 = [
             id: 11,
             name: "Tempura roll",
             description:
-              "Roll tempurizado de salmón, Queso cremoso, Topping dados de aguacate, Teriyaki, Yuzu, Sésamo",
+              "Roll tempurizado de salmón; Queso cremoso; Topping dados de aguacate; Teriyaki; Yuzu; Sésamo",
             image: "",
             price: "11,50€",
             extras: [],
@@ -834,7 +835,7 @@ export const japanese1 = [
             id: 12,
             name: "Supreme roll",
             description:
-              "Roll tempurizado sin arroz de salmón, Surimi, Espárrago, Aguacate con mayonesa jaonesa, Salsa teriyaki, Dados de pimiento",
+              "Roll tempurizado sin arroz de salmón; Surimi; Espárrago; Aguacate con mayonesa jaonesa; Salsa teriyaki; Dados de pimiento",
             image: "",
             price: "12,90€",
             extras: [],
@@ -844,7 +845,7 @@ export const japanese1 = [
             id: 13,
             name: "Green vegetal roll",
             description:
-              "Papel de arroz, Mézclum, Aguacate, Pepino, Espárrago, Tomate con topping, Yuzu, Teriyaki, Sésamo wasabi",
+              "Papel de arroz; Mézclum; Aguacate; Pepino; Espárrago; Tomate con topping; Yuzu; Teriyaki; Sésamo wasabi",
             image: "",
             price: "8,50€",
             extras: [],
@@ -854,7 +855,7 @@ export const japanese1 = [
             id: 14,
             name: "Rainbow roll",
             description:
-              "Espárrago triguero, Gamba tempura, Topping queso, Yuzu, Sésamo wasabi, Teriyaki",
+              "Espárrago triguero; Gamba tempura; Topping queso; Yuzu; Sésamo wasabi; Teriyaki",
             image: "",
             price: "13,50€",
             extras: [],
@@ -864,7 +865,7 @@ export const japanese1 = [
             id: 15,
             name: "Tropical roll",
             description:
-              "Mango, Srimi, Manzana, Cubierto con salmón, Crema de queso, Mayonesa de yuzu, Furikake Salsa teriyaki, Cereza confitada",
+              "Mango; Srimi; Manzana; Cubierto con salmón; Crema de queso; Mayonesa de yuzu; Furikake Salsa teriyaki; Cereza confitada",
             image: "",
             price: "11,50€",
             extras: [],
@@ -874,7 +875,7 @@ export const japanese1 = [
             id: 16,
             name: "Xplosion roll",
             description:
-              "Surimi, Aguacate, Topping de lubina flambeada, salsa de mayonesa de miel, Trufa, Ajo, Grosellas, Sésamo, Salsa teriyaki",
+              "Surimi; Aguacate; Topping de lubina flambeada; salsa de mayonesa de miel; Trufa; Ajo; Grosellas; Sésamo; Salsa teriyaki",
             image: "",
             price: "12,50€",
             extras: [],
@@ -890,7 +891,7 @@ export const japanese1 = [
             id: 0,
             name: "Maki nori mix (18 piezas)",
             description:
-              "6 Maki nori salmón, 6 Maki nori de atún, 6 Maki nori de mango y queso spicy",
+              "6 Maki nori salmón; 6 Maki nori de atún; 6 Maki nori de mango y queso spicy",
             image: "",
             price: "12,50€",
             extras: [],
@@ -900,7 +901,7 @@ export const japanese1 = [
             id: 1,
             name: "Uramaki mix (16 piezas)",
             description:
-              "4 Uramaki de salmón y aguacate, 4 Uramaki de atún, 4 Uramaki de mango y pollo, 4 Uramaki vegetal",
+              "4 Uramaki de salmón y aguacate; 4 Uramaki de atún; 4 Uramaki de mango y pollo; 4 Uramaki vegetal",
             image: "",
             price: "13,50€",
             extras: [],
@@ -910,7 +911,7 @@ export const japanese1 = [
             id: 2,
             name: "The only one (12 piezas)",
             description:
-              "8 Uramaki salmón y aguacate, 2 Nigiris de salmón, 2 Nigiris de atún",
+              "8 Uramaki salmón y aguacate; 2 Nigiris de salmón; 2 Nigiris de atún",
             image: "",
             price: "15,50€",
             extras: [],
@@ -920,7 +921,7 @@ export const japanese1 = [
             id: 3,
             name: "Norway (20 piezas)",
             description:
-              "8 Tobiko de salmón, 8 Uramaki de salmón y aguacate, 4 Nigiris de salmón y queso",
+              "8 Tobiko de salmón; 8 Uramaki de salmón y aguacate; 4 Nigiris de salmón y queso",
             image: "",
             price: "18,50€",
             extras: [],
@@ -930,7 +931,7 @@ export const japanese1 = [
             id: 4,
             name: "Bigfish (14 piezas)",
             description:
-              "6 Maki nori de salmón, 4 Nigiris de salmón, 4 Nigiris de atún",
+              "6 Maki nori de salmón; 4 Nigiris de salmón; 4 Nigiris de atún",
             image: "",
             price: "17,90€",
             extras: [],
@@ -940,7 +941,7 @@ export const japanese1 = [
             id: 5,
             name: "Green vegetal (20 piezas)",
             description:
-              "8 Uramaki vegano, 6 Maki nori de aguacate, 6 Maki nori de pepino",
+              "8 Uramaki vegano; 6 Maki nori de aguacate; 6 Maki nori de pepino",
             image: "",
             price: "12,50€",
             extras: [],
@@ -950,7 +951,7 @@ export const japanese1 = [
             id: 6,
             name: "Combo fashion (38 piezas)",
             description:
-              "4 Uramaki de salmón y aguacate, 4 Uramaki de atún, 4 Uramaki de pollo y mango, 4 Uramaki vegetal, 6 Maki nori de salmón, 6 Maki nori de atún, 6 Maki nori de mango y queso spicy, 4 Nigiris de samón",
+              "4 Uramaki de salmón y aguacate; 4 Uramaki de atún; 4 Uramaki de pollo y mango; 4 Uramaki vegetal; 6 Maki nori de salmón; 6 Maki nori de atún; 6 Maki nori de mango y queso spicy; 4 Nigiris de samón",
             image: "",
             price: "29,90€",
             extras: [],
@@ -960,7 +961,7 @@ export const japanese1 = [
             id: 7,
             name: "Magnificent (58 piezas)",
             description:
-              "8 Luna de salmón y queso, 8 Uramaki de atún, 8 Uramaki vegano, 8 Tobiki de salmón, 6 Maki nori de mango y queso spicy, 6 Maki nori de salmín, 6 Maki nori de atún, 4 Nigiris de salmón, 4 Nigiris de atún",
+              "8 Luna de salmón y queso; 8 Uramaki de atún; 8 Uramaki vegano; 8 Tobiki de salmón; 6 Maki nori de mango y queso spicy; 6 Maki nori de salmín; 6 Maki nori de atún; 4 Nigiris de salmón; 4 Nigiris de atún",
             image: "",
             price: "56€",
             extras: [],
