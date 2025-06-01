@@ -3,8 +3,8 @@ export const pizza1 = [
     name: "Ahh! Dios pizza",
     description: "Pizzes i entrepans",
     information:
-      "Per a emportar i a domicili; Afegix ingredients al teu gusr per 0'60€ individual i 1'10€ familiar",
-    restaurantHours: "Horari: dijous a diumenge de 19h a 22:30h",
+      "Per a emportar i a domicili; Afegix ingredients al teu gust per 0'60€ individual i 1'10€ familiar",
+    restaurantHours: "Dijous a diumenge de 19h a 22:30h",
     phone: "643 15 41 15",
     address: "Carrer de Sant Cristòfol, 6, 46410 Sueca, Valencia",
     sections: [

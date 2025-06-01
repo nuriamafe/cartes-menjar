@@ -3,9 +3,9 @@ export const burger1 = [
     name: "Ahupapi",
     description: "Las mejores hamburguesas, al mejor precio",
     information:
-      "Completa tu menú por solo +3 y añade patatas fritas + 1 bebida 1/2 litro; Las hamburguesas son de 180gr de vaca madurada y están hechas a la brasa en Kamado; Nuestro pan es exclusivo y elaborado por nosotros con una receta única; Burguer Vegana (Beyond Burguer) +2€; Pan sin Gluten Brioche +1€",
+      "Las hamburguesas son de 180gr de vaca madurada y están hechas a la brasa en Kamado; Nuestro pan es exclusivo y elaborado por nosotros con una receta única; Burguer Vegana (Beyond Burguer) +2€; Pan sin Gluten Brioche +1€",
     restaurantHours:
-      "Horario otoño; Miércoles y jueves 20:30h; Viernes; sábado y domingo 19:30h a 23:00h",
+      "Horario otoño; Miércoles y jueves 20:30h; Viernes; Sábado y domingo 19:30h a 23:00h",
     phone: "668 51 85 23",
     address: "Carrer Mercat 9 Bajo - Sueca",
     sections: [
@@ -195,6 +195,22 @@ export const burger1 = [
         categories: [
           {
             id: 0,
+            name: "Menú",
+            items: [
+              {
+                id: 0,
+                name: "Completa Menú",
+                description:
+                  "Completa tu menú por solo +3€ y añade patatas fritas + 1 bebida 1/2 litro",
+                image: "",
+                price: "",
+                extras: [],
+                allergens: [],
+              },
+            ],
+          },
+          {
+            id: 1,
             name: "Menú infantil",
             items: [
               {

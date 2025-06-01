@@ -48,9 +48,11 @@ function ItemDetails() {
               alt={itemDetails.name}
             />
           )}
-          <Title level={4} style={{ marginTop: ".5em" }}>
-            {itemDetails.price}
-          </Title>
+          {itemDetails.price && (
+            <Title level={4} style={{ marginTop: ".5em" }}>
+              {itemDetails.price}
+            </Title>
+          )}
 
           {itemDetails.extras.length !== 0 && (
             <Flex align="center" className="Extras" gap="small">
@@ -72,13 +74,15 @@ function ItemDetails() {
             </Flex>
           )}
 
-          <Flex align="center" className="ItemDescription">
-            <Space direction="vertical">
-              {splitDescription.map((word, index) => (
-                <Text key={index}>{word}</Text>
-              ))}
-            </Space>
-          </Flex>
+          {itemDetails.description && (
+            <Flex align="center" className="ItemDescription">
+              <Space direction="vertical">
+                {splitDescription.map((word, index) => (
+                  <Text key={index}>{word}</Text>
+                ))}
+              </Space>
+            </Flex>
+          )}
 
           {itemDetails.allergens.length !== 0 && (
             <Flex align="center" className="Allergens" gap="small">

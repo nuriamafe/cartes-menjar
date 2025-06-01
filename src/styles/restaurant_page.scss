@@ -24,6 +24,11 @@
 
   .ant-tabs {
     width: 100%;
+
+    .ant-tabs-tab div {
+      font-size: 1.1em;
+    }
+
     .SectionContainer {
       flex-wrap: wrap;
       justify-content: center;

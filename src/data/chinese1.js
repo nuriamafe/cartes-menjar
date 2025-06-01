@@ -5,7 +5,7 @@ export const chinese1 = [
     information: "👍Recomendado; 🌶️ Picante",
     restaurantHours: "",
     phone: "96 173 09 24",
-    address: "Plaza Doctor José Mongrell; 5; Cullera (Valencia)",
+    address: "Plaza Doctor José Mongrell, 5, Cullera (Valencia)",
     sections: [
       {
         id: 0,
