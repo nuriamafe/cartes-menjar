@@ -28,7 +28,7 @@ function Navbar() {
       </Link>
 
       <Link to="/cart">
-        <Button className="MenuButton" type="link">
+        <Button className="Cart" type="link">
           <ShoppingCartOutlined />
         </Button>
       </Link>

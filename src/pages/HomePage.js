@@ -1,5 +1,5 @@
 import { restaurantsInfo } from "../data/restaurants";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Flex, Input } from "antd";
 import RestaurantCard from "../components/RestaurantCard";
 

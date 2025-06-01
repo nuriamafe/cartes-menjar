@@ -22,11 +22,14 @@
     color: black;
   }
 
-  .SectionContainer {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1em;
+  .ant-tabs {
     width: 100%;
+    .SectionContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1em;
+      width: 100%;
+    }
   }
 
   .SelectContainer {

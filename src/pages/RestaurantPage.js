@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import MenuSection from "../components/MenuSection";
+import Sections from "../components/Sections";
 import {
   Flex,
   Typography,
@@ -10,6 +10,7 @@ import {
   Button,
   Space,
   Modal,
+  Tabs,
 } from "antd";
 import {
   InfoCircleOutlined,
@@ -18,6 +19,8 @@ import {
 } from "@ant-design/icons";
 import { useRestaurant } from "../context/RestaurantContext";
 const { Title, Text, Link } = Typography;
+
+const { TabPane } = Tabs;
 
 function RestaurantPage() {
   const { restaurantName } = useParams();
@@ -122,32 +125,82 @@ function RestaurantPage() {
     </Flex>
   );
 
-  const renderSelectSection = () => (
-    <div className="SelectContainer">
-      <Select
-        className="SelectSection"
-        defaultValue={0}
-        onChange={handleChange}
-        options={sections.map((section) => ({
-          label: section.name,
-          value: section.id,
-        }))}
-      />
-    </div>
+  function renderSelectSection(section) {
+    return (
+      <div className="SelectContainer">
+        <Select
+          className="SelectSection"
+          defaultValue={0}
+          onChange={handleChange}
+          options={section.categories.map((category) => ({
+            label: category.name,
+            value: category.id,
+          }))}
+        />
+      </div>
+    );
+  }
+
+  const renderFood = () => (
+    <Flex className="SectionContainer" gap={50}>
+      {sections[0] &&
+        sections[0].categories.map((category) => (
+          <Sections
+            key={category.id}
+            sectionId={sections[0].id}
+            categoryName={category.name}
+            items={category.items}
+            restaurantName={restaurantName}
+            categoryId={category.id}
+          />
+        ))}
+    </Flex>
   );
 
-  const renderMenuSections = () => (
+  const renderDrinks = () => (
     <Flex className="SectionContainer" gap={50}>
-      {sections.map((section) => (
-        <MenuSection
-          key={section.id}
-          sectionName={section.name}
-          items={section.items}
-          restaurantName={restaurantName}
-          sectionId={section.id}
-        />
-      ))}
+      {sections[1] &&
+        sections[1].categories.map((category) => (
+          <Sections
+            key={category.id}
+            sectionId={sections[1].id}
+            categoryName={category.name}
+            items={category.items}
+            restaurantName={restaurantName}
+            categoryId={category.id}
+          />
+        ))}
     </Flex>
+  );
+  const renderMenus = () => (
+    <Flex className="SectionContainer" gap={50}>
+      {sections[2] &&
+        sections[2].categories.map((category) => (
+          <Sections
+            key={category.id}
+            sectionId={sections[2].id}
+            categoryName={category.name}
+            items={category.items}
+            restaurantName={restaurantName}
+            categoryId={category.id}
+          />
+        ))}
+    </Flex>
+  );
+
+  const renderTabs = () => (
+    <Tabs centered size="large">
+      {sections
+        .filter((section) => section.categories.length !== 0)
+        .map((section) => (
+          <TabPane tab={section.name} key={section.id}>
+            {renderSelectSection(section)}
+            {section.id === 0 && renderFood()}
+            {section.id === 1 && renderDrinks()}
+            {section.id === 2 && renderMenus()}
+          </TabPane>
+        ))}
+    </Tabs>
   );
 
   return (
@@ -182,8 +235,7 @@ function RestaurantPage() {
           {description && renderDescriptionSection()}
 
           {renderContactSection()}
-          {renderSelectSection()}
-          {renderMenuSections()}
+          {renderTabs()}
           <FloatButton.BackTop />
         </Flex>
       )}

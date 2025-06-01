@@ -7,7 +7,7 @@ import { useRestaurant } from "../context/RestaurantContext";
 const { Title, Text } = Typography;
 
 function ItemDetails() {
-  const { restaurantName, sectionId, itemId } = useParams();
+  const { restaurantName, sectionId, categoryId, itemId } = useParams();
   const [itemDetails, setItemDetails] = useState(null);
   const { restaurantInfo, loading, fetchRestaurantInfo } = useRestaurant();
 
@@ -18,11 +18,15 @@ function ItemDetails() {
   useEffect(() => {
     const fetchItem = async () => {
       if (!loading) {
-        setItemDetails(restaurantInfo[0].sections[sectionId].items[itemId]);
+        setItemDetails(
+          restaurantInfo[0].sections[sectionId].categories[categoryId].items[
+            itemId
+          ]
+        );
       }
     };
     fetchItem();
-  }, [loading, restaurantInfo, sectionId, itemId]);
+  }, [loading, restaurantInfo, sectionId, categoryId, itemId]);
 
   if (loading) {
     return <Spin />;

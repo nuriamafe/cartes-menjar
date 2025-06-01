@@ -4,8 +4,8 @@ import { PlusOutlined } from "@ant-design/icons";
 import { useCart } from "../context/CartContext";
 const { Title } = Typography;
 
-function MenuSection(props) {
-  const { sectionName, items, restaurantName, sectionId } = props;
+function Sections(props) {
+  const { sectionId, categoryName, items, restaurantName, categoryId } = props;
   const { addToCart } = useCart();
 
   const handleAddToCart = (product) => {
@@ -14,8 +14,8 @@ function MenuSection(props) {
   };
 
   return (
-    <div className="MenuSection" id={sectionId}>
-      <Title level={3}>{sectionName}</Title>
+    <div className="Sections" id={categoryId}>
+      <Title level={3}>{categoryName}</Title>
       {items && (
         <List
           className="ListItems"
@@ -31,7 +31,9 @@ function MenuSection(props) {
             >
               <List.Item.Meta
                 title={
-                  <Link to={`/${restaurantName}/${sectionId}/items/${item.id}`}>
+                  <Link
+                    to={`/${restaurantName}/section/${sectionId}/category/${categoryId}/items/${item.id}`}
+                  >
                     {item.name}
                   </Link>
                 }
@@ -45,4 +47,4 @@ function MenuSection(props) {
   );
 }
 
-export default MenuSection;
+export default Sections;

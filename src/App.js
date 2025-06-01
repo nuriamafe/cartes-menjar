@@ -28,7 +28,7 @@ function App() {
                 element={<RestaurantPage />}
               />
               <Route
-                path="/:restaurantName/:sectionId/items/:itemId"
+                path="/:restaurantName/section/:sectionId/category/:categoryId/items/:itemId"
                 element={<ItemDetails />}
               />
               <Route path="/cart" element={<Cart />} />
