@@ -2,11 +2,16 @@
   .RestaurantInfo {
     width: 100%;
     position: relative;
+
     .Info {
       background: none;
       border: none;
       position: absolute;
     }
+  }
+
+  .Description {
+    margin: 0 0.5em 0 0.5em;
   }
 
   h2 {
@@ -15,7 +20,7 @@
   }
 
   .Contact {
-    margin-top: 0.5em;
+    margin: 0.5em 0.5em 0 0.5em;
   }
 
   .Contact a {
@@ -32,7 +37,7 @@
     .SectionContainer {
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 1em;
+      margin: 1em 0 1em 0;
       width: 100%;
     }
   }
@@ -52,7 +57,6 @@
     .ant-select-selector {
       background: transparent !important;
       border: none;
-      margin-right: 1em;
 
       span {
         font-size: 16px;

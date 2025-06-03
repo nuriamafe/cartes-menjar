@@ -106,7 +106,7 @@ function RestaurantPage() {
   ));
 
   const renderDescriptionSection = () => (
-    <Title level={4} style={{ marginTop: ".5em" }}>
+    <Title className="Description" level={5} style={{ marginTop: ".5em" }}>
       {description}
     </Title>
   );
