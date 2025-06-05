@@ -1,0 +1,51 @@
+.ModalFilter {
+  .ant-modal-footer {
+    .ant-btn {
+      width: 6em;
+      height: 2em;
+
+      span {
+        font-size: 1em;
+      }
+    }
+
+    .ClearCart {
+      position: absolute;
+      left: 0;
+      margin-left: 1em;
+      bottom: 1.45em;
+
+      svg {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .AllergensContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .Allergen {
+      position: relative;
+      margin-left: 0.5em;
+
+      img {
+        width: 5.5em;
+        height: auto;
+      }
+
+      .AllergenImage.selected {
+        border: 2px solid #1677ff;
+        border-radius: 8px;
+        box-shadow: 0 0 0 2px #1677ff33;
+      }
+
+      .AllergenCheckbox {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: none;
+      }
+    }
+  }
+}

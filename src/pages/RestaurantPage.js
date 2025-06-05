@@ -16,22 +16,25 @@ import {
   InfoCircleOutlined,
   PhoneOutlined,
   EnvironmentOutlined,
+  ControlOutlined,
 } from "@ant-design/icons";
 import { useRestaurant } from "../context/RestaurantContext";
+import AllergenFilter from "../components/AllergenFilter";
 const { Title, Text, Link } = Typography;
-
-const { TabPane } = Tabs;
 
 function RestaurantPage() {
   const { restaurantName } = useParams();
   const { restaurantInfo, loading, fetchRestaurantInfo, setRestaurantInfo } =
     useRestaurant();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalInfoOpen, setIsModalInfoOpen] = useState(false);
+  const [isModalFilterOpen, setIsModalFilterOpen] = useState(false);
+  const [selectedAllergens, setSelectedAllergens] = useState([]);
+  const [pendingAllergens, setPendingAllergens] = useState([]);
 
   useEffect(() => {
     setRestaurantInfo(null);
     fetchRestaurantInfo(restaurantName);
-  }, [restaurantName, fetchRestaurantInfo, setRestaurantInfo]);
+  }, [restaurantName]);
 
   if (loading || !restaurantInfo) {
     return <Spin />;
@@ -46,26 +49,6 @@ function RestaurantPage() {
     sections,
     restaurantHours,
   } = restaurantInfo[0];
-
-  const handleChange = (value) => {
-    const targetSection = document.getElementById(value);
-    if (targetSection) {
-      const offsetTop =
-        targetSection.getBoundingClientRect().top + window.scrollY;
-
-      window.scrollTo({
-        top: offsetTop - 60,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
 
   const splitText = (text) =>
     restaurantInfo && text.split(";").map((word) => word.trim());
@@ -105,6 +88,39 @@ function RestaurantPage() {
     </Space>
   ));
 
+  const showModalInfo = () => {
+    setIsModalInfoOpen(true);
+  };
+  const handleCancelInfo = () => {
+    setIsModalInfoOpen(false);
+  };
+
+  const renderInformationSection = () => (
+    <Flex justify="center" className="RestaurantInfo">
+      <Space direction="horiontal">
+        <Title level={2}>{name}</Title>
+        {(information || restaurantHours) && (
+          <>
+            <Button
+              shape="circle"
+              icon={<InfoCircleOutlined />}
+              className="Info"
+              onClick={showModalInfo}
+            />
+            <Modal
+              closable={{ "aria-label": "Custom Close Button" }}
+              open={isModalInfoOpen}
+              footer={null}
+              onCancel={handleCancelInfo}
+            >
+              {contentInformation}
+            </Modal>
+          </>
+        )}
+      </Space>
+    </Flex>
+  );
+
   const renderDescriptionSection = () => (
     <Title className="Description" level={5} style={{ marginTop: ".5em" }}>
       {description}
@@ -125,19 +141,59 @@ function RestaurantPage() {
     </Flex>
   );
 
+  const showModalFilter = () => {
+    setPendingAllergens(selectedAllergens);
+    setIsModalFilterOpen(true);
+  };
+  const handleCancelFilter = () => {
+    setIsModalFilterOpen(false);
+  };
+  const handleOkFilter = () => {
+    setSelectedAllergens(pendingAllergens);
+    setIsModalFilterOpen(false);
+  };
+
+  const handleSelectionChange = (value) => {
+    const targetSection = document.getElementById(value);
+    if (targetSection) {
+      const offsetTop =
+        targetSection.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: offsetTop - 60,
+        behavior: "smooth",
+      });
+    }
+  };
+
   function renderSelectSection(section) {
     return (
-      <div className="SelectContainer">
-        <Select
-          className="SelectSection"
-          defaultValue={0}
-          onChange={handleChange}
-          options={section.categories.map((category) => ({
-            label: category.name,
-            value: category.id,
-          }))}
-        />
-      </div>
+      <Flex className="SelectContainer">
+        <Space direction="horizontal">
+          <Select
+            className="SelectSection"
+            defaultValue={0}
+            onChange={handleSelectionChange}
+            options={section.categories.map((category) => ({
+              label: category.name,
+              value: category.id,
+            }))}
+          />
+          <Button
+            icon={<ControlOutlined />}
+            className="FilterFood"
+            onClick={showModalFilter}
+          />
+          <AllergenFilter
+            open={isModalFilterOpen}
+            pendingAllergens={pendingAllergens}
+            setPendingAllergens={setPendingAllergens}
+            onOk={handleOkFilter}
+            onCancel={handleCancelFilter}
+            loading={loading}
+          />
+        </Space>
+      </Flex>
     );
   }
 
@@ -152,6 +208,7 @@ function RestaurantPage() {
             items={category.items}
             restaurantName={restaurantName}
             categoryId={category.id}
+            selectedAllergens={selectedAllergens}
           />
         ))}
     </Flex>
@@ -168,6 +225,7 @@ function RestaurantPage() {
             items={category.items}
             restaurantName={restaurantName}
             categoryId={category.id}
+            selectedAllergens={selectedAllergens}
           />
         ))}
     </Flex>
@@ -183,57 +241,36 @@ function RestaurantPage() {
             items={category.items}
             restaurantName={restaurantName}
             categoryId={category.id}
+            selectedAllergens={selectedAllergens}
           />
         ))}
     </Flex>
   );
 
-  const renderTabs = () => (
-    <Tabs centered size="large">
-      {sections
-        .filter((section) => section.categories.length !== 0)
-        .map((section) => (
-          <TabPane tab={section.name} key={section.id}>
+  const renderTabs = () => {
+    const tabItems = sections
+      .filter((section) => section.categories.length !== 0)
+      .map((section) => ({
+        key: section.id,
+        label: section.name,
+        children: (
+          <>
             {renderSelectSection(section)}
             {section.id === 0 && renderFood()}
             {section.id === 1 && renderDrinks()}
             {section.id === 2 && renderMenus()}
-          </TabPane>
-        ))}
-    </Tabs>
-  );
+          </>
+        ),
+      }));
+    return <Tabs centered size="large" items={tabItems} />;
+  };
 
   return (
     <>
       {restaurantInfo && (
         <Flex vertical align="center" className="RestaurantPage">
-          {/* Restaurant info */}
-          <Flex justify="center" className="RestaurantInfo">
-            <Space direction="horiontal">
-              <Title level={2}>{name}</Title>
-              {(information || restaurantHours) && (
-                <>
-                  <Button
-                    shape="circle"
-                    icon={<InfoCircleOutlined />}
-                    className="Info"
-                    onClick={showModal}
-                  />
-                  <Modal
-                    closable={{ "aria-label": "Custom Close Button" }}
-                    open={isModalOpen}
-                    footer={null}
-                    onCancel={handleCancel}
-                  >
-                    {contentInformation}
-                  </Modal>
-                </>
-              )}
-            </Space>
-          </Flex>
-
+          {renderInformationSection()}
           {description && renderDescriptionSection()}
-
           {renderContactSection()}
           {renderTabs()}
           <FloatButton.BackTop />

@@ -1,4 +1,3 @@
-import React from "react";
 import { List, Typography, Button, Empty, Flex } from "antd";
 import { PlusOutlined, MinusOutlined, ClearOutlined } from "@ant-design/icons";
 import { useCart } from "../context/CartContext"; // Usamos el contexto para acceder al carrito
@@ -12,7 +11,7 @@ const Cart = () => {
     <Flex vertical align="center" className="CartContainer">
       <div className="Cart">
         <Flex justify="center" className="CartHeader">
-          <Typography.Title level={2}>Carrito</Typography.Title>
+          <Typography.Title level={2}>Carret</Typography.Title>
           {cart.length > 0 && (
             <Button
               className="ClearCart"
