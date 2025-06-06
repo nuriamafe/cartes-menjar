@@ -22,9 +22,9 @@ function Sections(props) {
       ? items
       : items.filter(
           (item) =>
-            item.allergens &&
-            item.allergens.some((allergen) =>
-              selectedAllergens.includes(allergen)
+            !item.allergens ||
+            item.allergens.every(
+              (allergen) => !selectedAllergens.includes(allergen)
             )
         );
 

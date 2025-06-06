@@ -6,7 +6,6 @@ import {
   Typography,
   Spin,
   FloatButton,
-  Select,
   Button,
   Space,
   Modal,
@@ -16,10 +15,9 @@ import {
   InfoCircleOutlined,
   PhoneOutlined,
   EnvironmentOutlined,
-  ControlOutlined,
 } from "@ant-design/icons";
 import { useRestaurant } from "../context/RestaurantContext";
-import AllergenFilter from "../components/AllergenFilter";
+import SectionSelection from "../components/SectionSelection";
 const { Title, Text, Link } = Typography;
 
 function RestaurantPage() {
@@ -168,32 +166,17 @@ function RestaurantPage() {
 
   function renderSelectSection(section) {
     return (
-      <Flex className="SelectContainer">
-        <Space direction="horizontal">
-          <Select
-            className="SelectSection"
-            defaultValue={0}
-            onChange={handleSelectionChange}
-            options={section.categories.map((category) => ({
-              label: category.name,
-              value: category.id,
-            }))}
-          />
-          <Button
-            icon={<ControlOutlined />}
-            className="FilterFood"
-            onClick={showModalFilter}
-          />
-          <AllergenFilter
-            open={isModalFilterOpen}
-            pendingAllergens={pendingAllergens}
-            setPendingAllergens={setPendingAllergens}
-            onOk={handleOkFilter}
-            onCancel={handleCancelFilter}
-            loading={loading}
-          />
-        </Space>
-      </Flex>
+      <SectionSelection
+        section={section}
+        handleSelectionChange={handleSelectionChange}
+        showModalFilter={showModalFilter}
+        isModalFilterOpen={isModalFilterOpen}
+        pendingAllergens={pendingAllergens}
+        setPendingAllergens={setPendingAllergens}
+        handleOkFilter={handleOkFilter}
+        handleCancelFilter={handleCancelFilter}
+        loading={loading}
+      />
     );
   }
 

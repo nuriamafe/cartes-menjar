@@ -39,7 +39,7 @@ function AllergenFilter({
       className="ModalFilter"
       closable={{ "aria-label": "Custom Close Button" }}
       open={open}
-      title="Selecciona per mostrar mostrar"
+      title="Selecciona per a no mostrar"
       onOk={onOk}
       onCancel={onCancel}
       footer={[
