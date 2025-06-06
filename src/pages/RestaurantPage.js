@@ -245,7 +245,7 @@ function RestaurantPage() {
           </>
         ),
       }));
-    const showTabs = tabItems.length > 0;
+    const showTabs = tabItems.length > 1;
     return showTabs && <Tabs centered size="large" items={tabItems} />;
   };
 
