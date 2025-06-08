@@ -45,7 +45,7 @@ function AllergenFilter({
       footer={[
         <Button
           key="clear"
-          className="ClearCart"
+          className="ClearSelection"
           onClick={() => setPendingAllergens([])}
           icon={<ClearOutlined />}
         />,

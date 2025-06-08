@@ -9,19 +9,6 @@
   display: none; /* Ocultar completamente la barra de desplazamiento */
 }
 
-/* Search bar */
-.SearchBar {
-  margin-top: 0.625em;
-  width: 50%;
-}
-
-/* Home page */
-.CardContainer {
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1em;
-}
-
 /* Small devices */
 @media only screen and (max-width: 600px) {
 }

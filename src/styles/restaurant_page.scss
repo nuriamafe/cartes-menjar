@@ -42,24 +42,6 @@
     }
   }
 
-  .SelectContainer {
-    justify-content: center;
-    width: 100%;
-    background-color: rgba(245, 245, 245, 255);
-    position: sticky;
-    top: 0em;
-    z-index: 1000;
-
-    .FilterFood {
-      background: none;
-      border: none;
-      margin: 1em 1.5em 0 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-  }
-
   .SelectSection {
     width: 15em;
     margin-top: 1em;

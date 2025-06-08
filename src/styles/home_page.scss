@@ -1,0 +1,31 @@
+/* Home page */
+.CardContainer {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 1em 1em 1em;
+}
+
+.SearchContainer {
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(245, 245, 245, 255);
+  position: sticky;
+  top: 0em;
+  z-index: 1000;
+
+  /* Search bar */
+  .SearchBar {
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+    width: 50%;
+  }
+
+  .FilterRestaurant {
+    background: none;
+    border: none;
+    margin: 1em 1.5em 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

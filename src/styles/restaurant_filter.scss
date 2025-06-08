@@ -1,0 +1,34 @@
+.ModalType {
+  .ant-modal-footer {
+    .ant-btn {
+      width: 6em;
+      height: 2em;
+
+      span {
+        font-size: 1em;
+      }
+    }
+
+    .ClearSelection {
+      position: absolute;
+      left: 0;
+      margin-left: 1em;
+      bottom: 1.45em;
+
+      svg {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .TypesContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .TypeCheckbox {
+      span {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

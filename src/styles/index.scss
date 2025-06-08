@@ -1,8 +1,11 @@
 @use "./global";
 @use "./navbar";
+@use "./home_page";
 @use "./restaurant_card";
 @use "./restaurant_page";
+@use "./restaurant_filter";
+@use "./alergens_filter";
 @use "./sections";
+@use "./section_selection.scss";
 @use "./item_details";
 @use "./cart";
-@use "./alergens_filter";
