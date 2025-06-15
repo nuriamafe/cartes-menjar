@@ -42,4 +42,11 @@ export const restaurantsInfo = [
     image: require("../assets/restaurants/japanese2.jpg"),
     type: ["asian", "sushi"],
   },
+  {
+    id: 6,
+    jsonName: "japanese3",
+    name: "Tokio",
+    image: require("../assets/restaurants/japanese3.jpg"),
+    type: ["asian", "sushi"],
+  },
 ];

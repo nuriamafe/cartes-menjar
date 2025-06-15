@@ -33,14 +33,26 @@ const Cart = () => {
                     // Botón para aumentar la cantidad
                     <Button
                       type="link"
-                      onClick={() => increaseQuantity(item.id)} // Aumentar cantidad
+                      onClick={() =>
+                        increaseQuantity(
+                          item.id,
+                          item.categoryId,
+                          item.sectionId
+                        )
+                      } // Aumentar cantidad
                     >
                       <PlusOutlined className="ModifyQuantity" />
                     </Button>,
                     // Botón para disminuir la cantidad
                     <Button
                       type="link"
-                      onClick={() => decreaseQuantity(item.id)} // Disminuir cantidad
+                      onClick={() =>
+                        decreaseQuantity(
+                          item.id,
+                          item.categoryId,
+                          item.sectionId
+                        )
+                      } // Disminuir cantidad
                     >
                       <MinusOutlined className="ModifyQuantity" />
                     </Button>,

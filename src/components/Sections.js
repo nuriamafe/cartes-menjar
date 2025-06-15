@@ -29,7 +29,12 @@ function Sections(props) {
         );
 
   const handleAddToCart = (product) => {
-    addToCart(product);
+    // Añadir categoryId y sectionId al producto antes de pasarlo al carrito
+    addToCart({
+      ...product,
+      categoryId,
+      sectionId,
+    });
     messageApi.success("Producte afegit al carret");
   };
 
@@ -65,7 +70,7 @@ function Sections(props) {
                     {item.name}
                   </Link>
                 }
-                description={item.price}
+                description={item.price === "€" ? "" : item.price}
               />
             </List.Item>
           )}

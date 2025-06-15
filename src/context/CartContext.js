@@ -23,36 +23,60 @@ export const CartProvider = ({ children }) => {
   // Función para agregar productos al carrito
   const addToCart = (product) => {
     setCart((prevCart) => {
-      const existingProduct = prevCart.find((item) => item.id === product.id);
+      // Usar id + categoryId + sectionId como clave única
+      const existingProduct = prevCart.find(
+        (item) =>
+          item.id === product.id &&
+          item.categoryId === product.categoryId &&
+          item.sectionId === product.sectionId
+      );
+
       if (existingProduct) {
         // Si el producto ya está en el carrito, incrementar la cantidad
         return prevCart.map((item) =>
-          item.id === product.id
+          item.id === product.id &&
+          item.categoryId === product.categoryId &&
+          item.sectionId === product.sectionId
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
       } else {
-        // Si no está, agregarlo con cantidad 1
-        return [...prevCart, { ...product, quantity: 1 }];
+        // Si no está, agregarlo con cantidad 1 y guardar categoryId y sectionId
+        return [
+          ...prevCart,
+          {
+            ...product,
+            quantity: 1,
+            categoryId: product.categoryId,
+            sectionId: product.sectionId,
+          },
+        ];
       }
     });
   };
 
   // Función para aumentar la cantidad de un producto
-  const increaseQuantity = (productId) => {
+  const increaseQuantity = (productId, categoryId, sectionId) => {
     setCart((prevCart) =>
       prevCart.map((item) =>
-        item.id === productId ? { ...item, quantity: item.quantity + 1 } : item
+        item.id === productId &&
+        item.categoryId === categoryId &&
+        item.sectionId === sectionId
+          ? { ...item, quantity: item.quantity + 1 }
+          : item
       )
     );
   };
 
   // Función para disminuir la cantidad de un producto
-  const decreaseQuantity = (productId) => {
+  const decreaseQuantity = (productId, categoryId, sectionId) => {
     setCart((prevCart) => {
       // Actualiza la cantidad de ese producto
       const updatedCart = prevCart.map((item) =>
-        item.id === productId && item.quantity >= 1
+        item.id === productId &&
+        item.categoryId === categoryId &&
+        item.sectionId === sectionId &&
+        item.quantity >= 1
           ? { ...item, quantity: item.quantity - 1 }
           : item
       );
@@ -67,7 +91,7 @@ export const CartProvider = ({ children }) => {
     const total = cart.reduce((total, item) => {
       // Reemplazamos la coma por el punto antes de multiplicar
       const priceWithPoint = parseFloat(
-        item.price.toString().replace(",", ".")
+        item.price === "€" ? 0 : item.price.toString().replace(",", ".")
       );
       return total + priceWithPoint * item.quantity;
     }, 0);
