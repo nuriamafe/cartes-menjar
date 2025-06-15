@@ -49,4 +49,11 @@ export const restaurantsInfo = [
     image: require("../assets/restaurants/japanese3.jpg"),
     type: ["asian", "sushi"],
   },
+  {
+    id: 7,
+    jsonName: "pizza2",
+    name: "Local pizza",
+    image: require("../assets/restaurants/pizza2.jpg"),
+    type: ["pizza"],
+  },
 ];
