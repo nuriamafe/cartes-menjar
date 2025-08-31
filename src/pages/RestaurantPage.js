@@ -64,7 +64,7 @@ function RestaurantPage() {
         </>
       )}
 
-      {restaurantHours && (
+      {/* {restaurantHours && (
         <>
           <Title level={5} style={{ marginTop: "1em", marginBottom: "0em" }}>
             Horari
@@ -73,7 +73,7 @@ function RestaurantPage() {
             <Text key={index}>{word}</Text>
           ))}
         </>
-      )}
+      )} */}
     </Space>
   );
 
@@ -254,7 +254,7 @@ function RestaurantPage() {
         <Flex vertical align="center" className="RestaurantPage">
           {renderInformationSection()}
           {description && renderDescriptionSection()}
-          {renderContactSection()}
+          {/* {renderContactSection()} */}
           {renderTabs()}
           <FloatButton.BackTop />
         </Flex>
