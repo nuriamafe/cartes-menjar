@@ -559,7 +559,7 @@ export const pizza2 = [
                 image: "",
                 price: "5,70€",
                 extras: [],
-                allergens: [""],
+                allergens: [],
               },
               {
                 id: 1,
@@ -619,7 +619,7 @@ export const pizza2 = [
                 image: "",
                 price: "2,70€",
                 extras: [],
-                allergens: [""],
+                allergens: [],
               },
               {
                 id: 1,
@@ -643,7 +643,7 @@ export const pizza2 = [
                 image: "",
                 price: "4,50€",
                 extras: [],
-                allergens: [""],
+                allergens: [],
               },
               {
                 id: 1,
@@ -697,7 +697,7 @@ export const pizza2 = [
                 image: "",
                 price: "3,00€",
                 extras: [],
-                allergens: [""],
+                allergens: [],
               },
               {
                 id: 1,
