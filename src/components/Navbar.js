@@ -1,26 +1,10 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button, Flex } from "antd";
-import {
-  LeftOutlined,
-  HomeOutlined,
-  ShoppingCartOutlined,
-} from "@ant-design/icons";
+import { HomeOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 
 function Navbar() {
-  const navigate = useNavigate();
-
   return (
     <Flex justify="center" className="Navbar">
-      <Button
-        className="Back"
-        type="link"
-        onClick={() => {
-          navigate(-1);
-        }}
-      >
-        <LeftOutlined />
-      </Button>
-
       <Link to="/">
         <Button className="Home" type="link">
           <HomeOutlined />

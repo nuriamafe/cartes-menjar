@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { List, Typography, message, Button } from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import { useCart } from "../context/CartContext";
