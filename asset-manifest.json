@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cartes-menjar/static/css/main.599f45c1.css",
-    "main.js": "/cartes-menjar/static/js/main.0c475444.js",
+    "main.css": "/cartes-menjar/static/css/main.086cbe0b.css",
+    "main.js": "/cartes-menjar/static/js/main.3f673bc5.js",
     "static/js/781.d3e184e1.chunk.js": "/cartes-menjar/static/js/781.d3e184e1.chunk.js",
     "static/js/955.96a2fb73.chunk.js": "/cartes-menjar/static/js/955.96a2fb73.chunk.js",
     "static/js/942.d7805a29.chunk.js": "/cartes-menjar/static/js/942.d7805a29.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/685.45f5594e.chunk.js": "/cartes-menjar/static/js/685.45f5594e.chunk.js",
     "static/js/212.2cade457.chunk.js": "/cartes-menjar/static/js/212.2cade457.chunk.js",
     "static/js/165.964c896b.chunk.js": "/cartes-menjar/static/js/165.964c896b.chunk.js",
-    "static/js/488.673880a4.chunk.js": "/cartes-menjar/static/js/488.673880a4.chunk.js",
+    "static/js/488.05ffe81e.chunk.js": "/cartes-menjar/static/js/488.05ffe81e.chunk.js",
     "static/media/pizza2.jpg": "/cartes-menjar/static/media/pizza2.122cffdd52cc5be1bf6b.jpg",
     "static/media/japanese3.jpg": "/cartes-menjar/static/media/japanese3.3b1d3ea5eeae91dd193b.jpg",
     "static/media/pizza1.jpg": "/cartes-menjar/static/media/pizza1.45662d65721ccd6044bc.jpg",
@@ -34,8 +34,8 @@
     "static/media/fish.png": "/cartes-menjar/static/media/fish.cef95b422200b902386b.png",
     "static/media/dairy.png": "/cartes-menjar/static/media/dairy.fd941b063596b0705d7e.png",
     "index.html": "/cartes-menjar/index.html",
-    "main.599f45c1.css.map": "/cartes-menjar/static/css/main.599f45c1.css.map",
-    "main.0c475444.js.map": "/cartes-menjar/static/js/main.0c475444.js.map",
+    "main.086cbe0b.css.map": "/cartes-menjar/static/css/main.086cbe0b.css.map",
+    "main.3f673bc5.js.map": "/cartes-menjar/static/js/main.3f673bc5.js.map",
     "781.d3e184e1.chunk.js.map": "/cartes-menjar/static/js/781.d3e184e1.chunk.js.map",
     "955.96a2fb73.chunk.js.map": "/cartes-menjar/static/js/955.96a2fb73.chunk.js.map",
     "942.d7805a29.chunk.js.map": "/cartes-menjar/static/js/942.d7805a29.chunk.js.map",
@@ -44,10 +44,10 @@
     "685.45f5594e.chunk.js.map": "/cartes-menjar/static/js/685.45f5594e.chunk.js.map",
     "212.2cade457.chunk.js.map": "/cartes-menjar/static/js/212.2cade457.chunk.js.map",
     "165.964c896b.chunk.js.map": "/cartes-menjar/static/js/165.964c896b.chunk.js.map",
-    "488.673880a4.chunk.js.map": "/cartes-menjar/static/js/488.673880a4.chunk.js.map"
+    "488.05ffe81e.chunk.js.map": "/cartes-menjar/static/js/488.05ffe81e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.599f45c1.css",
-    "static/js/main.0c475444.js"
+    "static/css/main.086cbe0b.css",
+    "static/js/main.3f673bc5.js"
   ]
 }
