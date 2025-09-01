@@ -28,6 +28,8 @@ function RestaurantPage() {
   const [isModalFilterOpen, setIsModalFilterOpen] = useState(false);
   const [selectedAllergens, setSelectedAllergens] = useState([]);
   const [pendingAllergens, setPendingAllergens] = useState([]);
+  // Estado global para el panel abierto
+  const [selectedItemKey, setSelectedItemKey] = useState(null);
 
   useEffect(() => {
     setRestaurantInfo(null);
@@ -190,8 +192,11 @@ function RestaurantPage() {
             categoryName={category.name}
             items={category.items}
             restaurantName={restaurantName}
+            restaurantId={restaurantInfo[0].id}
             categoryId={category.id}
             selectedAllergens={selectedAllergens}
+            selectedItemKey={selectedItemKey}
+            setSelectedItemKey={setSelectedItemKey}
           />
         ))}
     </Flex>
@@ -207,8 +212,11 @@ function RestaurantPage() {
             categoryName={category.name}
             items={category.items}
             restaurantName={restaurantName}
+            restaurantId={restaurantInfo[0].id}
             categoryId={category.id}
             selectedAllergens={selectedAllergens}
+            selectedItemKey={selectedItemKey}
+            setSelectedItemKey={setSelectedItemKey}
           />
         ))}
     </Flex>
@@ -223,8 +231,11 @@ function RestaurantPage() {
             categoryName={category.name}
             items={category.items}
             restaurantName={restaurantName}
+            restaurantId={restaurantInfo[0].id}
             categoryId={category.id}
             selectedAllergens={selectedAllergens}
+            selectedItemKey={selectedItemKey}
+            setSelectedItemKey={setSelectedItemKey}
           />
         ))}
     </Flex>

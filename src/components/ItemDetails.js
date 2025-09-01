@@ -1,13 +1,11 @@
-import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Typography, Spin, Flex, Image, Space } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faPepperHot } from "@fortawesome/free-solid-svg-icons";
 import { useRestaurant } from "../context/RestaurantContext";
-const { Title, Text } = Typography;
+const { Text } = Typography;
 
-function ItemDetails() {
-  const { restaurantName, sectionId, categoryId, itemId } = useParams();
+function ItemDetails({ restaurantName, sectionId, categoryId, itemId }) {
   const [itemDetails, setItemDetails] = useState(null);
   const { restaurantInfo, loading, fetchRestaurantInfo } = useRestaurant();
 
@@ -40,18 +38,12 @@ function ItemDetails() {
     <>
       {itemDetails && (
         <Flex vertical align="center" className="ItemDetails">
-          <Title level={3}>{itemDetails.name}</Title>
           {itemDetails.image !== "" && (
             <Image
               className="itemImage"
               src={itemDetails.image}
               alt={itemDetails.name}
             />
-          )}
-          {itemDetails.price && (
-            <Title level={4} style={{ marginTop: ".5em" }}>
-              {itemDetails.price}
-            </Title>
           )}
 
           {itemDetails.extras.length !== 0 && (
